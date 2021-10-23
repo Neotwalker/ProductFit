@@ -562,6 +562,7 @@ p, a {
   padding-bottom: 60px;
   position: relative;
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .services-list-item_img {
@@ -692,6 +693,10 @@ p, a {
 
 .footer-desctop_menu_list_item {
   padding-right: 30px;
+}
+
+.footer-desctop_menu_mobile {
+  display: none;
 }
 
 .footer-desctop_copyright {

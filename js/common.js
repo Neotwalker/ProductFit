@@ -28,10 +28,10 @@ $(document).ready(function() {
 				items: 2
 			},
 			1024:{
-				items: 4
+				items: 3
 			},
 			1440:{
-				items: 5
+				items: 4
 			}
 		},
 		navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
@@ -48,6 +48,15 @@ $(document).ready(function() {
 				},
 				480:{
 					items: 1
+				},
+				768:{
+					items: 2
+				},
+				1024:{
+					items: 3
+				},
+				1440:{
+					items: 4
 				}
 			},
 			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
@@ -70,18 +79,8 @@ $(document).ready(function() {
 		});
 		var services = $(".services-list");
 		services.owlCarousel({
-			items:1,
 			dots: false,
 			nav: true,
-			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
-								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
-		});
-	}
-	var slider = $(".banner-slider");
-		slider.owlCarousel({
-			dots: false,
-			nav: true,
-			responsiveClass:true,
 			responsive: {
 				0:{
 					items: 1
@@ -93,12 +92,22 @@ $(document).ready(function() {
 					items: 2
 				},
 				1024:{
-					items: 4
+					items: 3
 				},
 				1440:{
-					items: 5
+					items: 4
 				}
 			},
+			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
+		});
+	}
+	var slider = $(".banner-slider");
+		slider.owlCarousel({
+			dots: false,
+			nav: true,
+			items: 1,
+			responsiveClass:true,
 			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
 								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
 	});

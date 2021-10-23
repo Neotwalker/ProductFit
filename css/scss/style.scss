@@ -516,6 +516,7 @@ p, a{
 			padding-bottom: 60px;
 			position: relative;
 			text-align: center;
+			margin-bottom: 90px;
 			&_img{
 				position: absolute;
 				top: -60px;
@@ -630,6 +631,9 @@ p, a{
 			&_item{
 				padding-right: 30px;
 			}
+		}
+		&_mobile{
+			display: none;
 		}
 	}
 	&_copyright{
