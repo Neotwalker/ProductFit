@@ -250,7 +250,7 @@ p, a{
 	&-slider{
 		button.owl-prev, button.owl-next {
 			position: absolute;
-			top: 130%;
+			top: 136%;
 			margin-top: -10px;
 			border: none;
 			background: inherit;
@@ -388,6 +388,7 @@ p, a{
 		&-item{
 			margin-right: 60px;
 			margin-bottom: 45px;
+			min-height: 320px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -640,41 +641,203 @@ p, a{
 		opacity: 0.7;
 	}
 }
-@media screen and (max-width: 900px) {
+@media (max-width: 480px) {
+	.wrapper{
+		display: none;
+	}
 	.header{
 		&-menu{
-			justify-content: center;
 			&-logo{
-
-			}
-			.wrapper{
-				display: none;
+				margin-left: 0;
 			}
 		}
 		&-main{
-			flex-direction: column;
-			justify-content: space-between;
-			&-image img{
-				max-width: 600px;
+			align-items: baseline;
+			flex-wrap: wrap;
+			background-image: url('/img/header_picture.png');
+			background-repeat: no-repeat;
+			background-position: 87% 136%;
+			&-info{
+				&-headtext{
+					text-align: center;
+				}
+				&-text{
+					margin-left: 23px;
+					margin-right: 23px;
+				}
+				&-button{
+					margin: 0 auto;
+				}
+			}
+			&-image{
+				display: none;
 			}
 		}
 	}
-	.advantages{
+	.button_desc{
+		display: none;
+	}
+	.button_mob{
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.advantage{
 		&-block{
-			width: 200px !important;
+			&_flex{
+				flex-wrap: wrap-reverse;
+			}
+			&_info{
+				&_header{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.projects{
+		margin-bottom: 90px;
+		&-list{
+			display: block;
+			&-item{
+				margin: 0 auto;
+				&:last-child{
+					margin: auto;
+				}
+			}
+			button.owl-prev, button.owl-next {
+				position: absolute;
+				top: 2840px;
+				margin-top: -10px;
+				border: none;
+				background: inherit;
+			}
+			button.owl-prev {
+				left: 5px;
+			}
+			button.owl-next {
+				right: 5px;
+			}
+			button.owl-prev i, button.owl-next i{
+				color: $color-headers;
+			}
+		}
+		&-mob_img{
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+	}
+	.banner{
+		display: none;
+	}
+	.services{
+		&-list{
+			display: block;
+			&-item{
+				margin: 0 auto;
+			}
+			.bottom{
+				display: none;
+			}
+			button.owl-prev, button.owl-next {
+				position: absolute;
+				top: 3369px;
+				margin-top: -10px;
+				border: none;
+				background: inherit;
+			}
+			button.owl-prev {
+				left: 5px;
+			}
+			button.owl-next {
+				right: 5px;
+			}
+			button.owl-prev i, button.owl-next i{
+				color: $color-main;
+			}
+		}
+	}
+	.submit{
+		&-image{
+			width: 100%;
+			padding-bottom: 55px;
+			padding-left: 50px;
+			box-sizing: border-box;
+			margin-right: 0;
+		}
+	}
+	.footer-desctop{
+		&_menu{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: initial;
+			flex-direction: column;
+			&_logo{
+				display: none;
+			}
+			&_wrp{
+				flex-wrap: wrap;
+				&_block_1, &_block_2{
+					display: none;
+				}
+				&_info{
+					padding-top: 35px;
+				}
+			}
+			&_list{
+				display: none;
+			}
+			&_mobile{
+				&_block_1{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					a{
+						color: $color-headers;
+						font-size: 16px;
+						&:last-child{
+							opacity: 0.7;
+						}
+					}
+				}
+				&_contactus{
+					display: block;
+					text-align: center;
+					font-size: 16px;
+					font-weight: 700;
+					margin-top: 35px;
+					margin-bottom: 35px;
+					width: 100%;
+					color: $color-headers;
+				}
+				&_block_2{
+					display: flex;
+					justify-content: space-around;
+					a{
+						font-weight: 700;
+						font-size: 16px;
+					}
+					&_list{
+						display: flex;
+						list-style-type: none;
+						&_item{
+							padding-right: 30px;
+							&:last-child{
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		&_copyright{
+			margin-top: 40px;
 		}
 	}
 }
 
 @media (max-width: 1000px){
-	.projects{
-		margin-bottom: 120px;
-		&-header{
-			text-align: center;
-			padding-bottom: 75px;
-		}
-		&-list{
-			display: flex;
-		}
-	}
+	
 }

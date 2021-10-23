@@ -1,22 +1,5 @@
 'use strict';
-$('html').css('overflow-x', 'initial');
-$('.companies-slider').owlCarousel({
-	nav: true,
-	dots: false,
-	responsive: {
-		0:{
-			items:1
-		},
-		600:{
-			items:3
-		},
-		1000:{
-			items:5
-		}
-	},
-	navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-              '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-});
+
 $('.advantages-block').click(function (event) {
 	$('.block').removeClass('block-active');
 	var num = $(this).attr('data-class');
@@ -27,45 +10,96 @@ $(".advantages-block").on("click", function () {
 	$(this).addClass("active");
 });
 
-if($(window).innerWidth() <= 1358){
-	$('.advantages-slider').owlCarousel({
+
+$(document).ready(function() {
+	var companies = $('.companies-slider');
+	companies.owlCarousel({
 		nav: true,
 		dots: false,
+		responsiveClass:true,
 		responsive: {
 			0:{
 				items: 1
 			},
-			600:{
-				items: 3
-			},
-			1000:{
-				items: 3
-			}
-		},
-		navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-              '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-	});
-	$('.projects-list').owlCarousel({
-		nav: true,
-		dots: false,
-		responsive: {
-			0:{
+			480:{
 				items: 1
 			},
-			600:{
-				items: 3
+			768:{
+				items: 2
 			},
-			1000:{
+			1024:{
 				items: 4
+			},
+			1440:{
+				items: 5
 			}
 		},
+		navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>'],
 	});
-}
-var slider = $(".banner-slider");
-  slider.owlCarousel({
-    items:1,
-		dots: false,
-    nav: true,
-    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>',
-              '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-  });
+	if($(window).innerWidth() <= 1358){
+		$('.advantages-slider').owlCarousel({
+			nav: true,
+			dots: false,
+			responsiveClass:true,
+			responsive: {
+				0:{
+					items: 1
+				},
+				480:{
+					items: 1
+				}
+			},
+			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
+		});
+		$('.projects-list').owlCarousel({
+			nav: true,
+			dots: false,
+			responsiveClass:true,
+			responsive: {
+				0:{
+					items: 1
+				},
+				480:{
+					items: 1
+				}
+			},
+			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
+		});
+		var services = $(".services-list");
+		services.owlCarousel({
+			items:1,
+			dots: false,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
+		});
+	}
+	var slider = $(".banner-slider");
+		slider.owlCarousel({
+			dots: false,
+			nav: true,
+			responsiveClass:true,
+			responsive: {
+				0:{
+					items: 1
+				},
+				480:{
+					items: 1
+				},
+				768:{
+					items: 2
+				},
+				1024:{
+					items: 4
+				},
+				1440:{
+					items: 5
+				}
+			},
+			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
+								'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
+	});
+});
