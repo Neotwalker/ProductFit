@@ -269,7 +269,7 @@ p, a {
 
 .advantages-slider button.owl-prev, .advantages-slider button.owl-next {
   position: absolute;
-  top: 136%;
+  top: 1110px;
   margin-top: -10px;
   border: none;
   background: inherit;
