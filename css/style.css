@@ -467,7 +467,7 @@ p, a {
 }
 
 .banner {
-  background-image: url("/img/images-banner/Banner_design.png");
+  background-image: url("img/images-banner/Banner_design.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top center;
@@ -497,7 +497,7 @@ p, a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: url("/img/images-banner/packground-image.png");
+  background-image: url("img/images-banner/packground-image.png");
   background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
