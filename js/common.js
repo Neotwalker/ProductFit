@@ -31,7 +31,7 @@ $(document).ready(function() {
 				items: 3
 			},
 			1440:{
-				items: 4
+				items: 5
 			}
 		},
 		navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
