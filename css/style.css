@@ -1410,6 +1410,9 @@ ul, li {
   .advantage-block_info_text {
     padding: 0 20px;
   }
+  .banner {
+    display: none;
+  }
   .cart-wrp {
     flex-wrap: wrap;
   }
