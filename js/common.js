@@ -1,17 +1,14 @@
 'use strict';
-
-$('.advantages-block').click(function (event) {
-	$('.block').removeClass('block-active');
-	var num = $(this).attr('data-class');
-	$('#block' + num).addClass('block-active');
-});
-$(".advantages-block").on("click", function () {
-	$(".advantages-block").removeClass("active");
-	$(this).addClass("active");
-});
-
-
 $(document).ready(function() {
+	$('.advantages-block').click(function (event) {
+		$('.block').removeClass('block-active');
+		var num = $(this).attr('data-class');
+		$('#block' + num).addClass('block-active');
+	});
+	$(".advantages-block").on("click", function () {
+		$(".advantages-block").removeClass("active");
+		$(this).addClass("active");
+	});
 	var companies = $('.companies-slider');
 	companies.owlCarousel({
 		nav: true,
@@ -128,5 +125,12 @@ $(document).ready(function() {
 			responsiveClass:true,
 			navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
 								'<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>'],
+	});
+
+	$("#products_grid").mixItUp();
+	
+	$('.products li').click(function(){
+		$('.products li').removeClass('active');
+		$(this).addClass('active');
 	});
 });

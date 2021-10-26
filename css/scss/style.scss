@@ -61,6 +61,10 @@ p, a{
 	color: $color-text;
 	line-height: 17px;
 }
+ul, li{
+	font-family: 'gilroy-normal', sans-serif;
+	font-size: 14px;
+}
 .telegram, .mail, .phone{
 	display: flex;
 	align-items: center;
@@ -866,6 +870,110 @@ p, a{
 		margin: 10px auto 40px;
 		color: $color-text;
 		opacity: 0.7;
+	}
+}
+.products{
+	&-headertext{
+		text-align: center;
+	}
+	ul, li{
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		cursor: pointer;
+	}
+	ul{
+		margin-bottom: 25px;
+	}
+	li{
+		margin: 0 20px;
+		color: $color-headers;
+		padding: 7px 20px;
+		border-radius: 5px;
+		&.active{
+			background-color: $color-block;
+			transition: all .3s ease-in-out;
+			color: $color-main;
+		}
+		&:hover{
+			background-color: $color-block;
+			transition: all .3s ease-in-out;
+			color: $color-main;
+		}
+	}
+	&_list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&_item{
+			display: none;
+			width: 25%;
+			text-align: center;
+			margin: 0 25px 50px;
+			&_gallery{
+				position: relative;
+				background-color: #c7ceda;
+				&.style1{
+					overflow: hidden;
+				}
+				&.style1:hover .products_list_item_caption{
+					-webkit-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+					bottom: -1px!important;
+				}
+				&_img{
+					overflow: hidden;
+					-webkit-backface-visibility: hidden;
+					backface-visibility: hidden;
+					-webkit-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+					img{
+						object-fit: cover;
+						display: block;
+						max-width: 100%;
+						margin: 30px auto;
+
+						-webkit-transition: all .3s ease-in-out;
+						transition: all .3s ease-in-out;
+					}
+				}
+				&:hover img{
+					-webkit-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					transform: scale(1.1);
+				}
+			}
+			&_caption{
+				text-align: center;
+				background-color: $color-headers;
+				padding: 5px;
+				box-sizing: border-box;
+				position: absolute;
+				top: auto;
+				right: 0;
+				bottom: -1px;
+				left: 0;
+				width: 100%;
+				-webkit-transition: all .5s ease 0s;
+				transition: all .5s ease 0s;
+				-webkit-transform: translate3d(0,100%,0);
+				transform: translate3d(0,100%,0);
+				&-name{
+					display: block;
+					padding-top: 10px;
+					text-transform: uppercase;
+					margin-bottom: 0;
+					padding-top: 10px;
+					color: $color-main;
+				}
+				&-desc{
+					color: $color-main;
+					line-height: 20px;
+				}
+			}
+		}
 	}
 }
 @media only screen and (max-width : 480px) {

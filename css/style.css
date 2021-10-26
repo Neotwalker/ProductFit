@@ -56,6 +56,11 @@ p, a {
   line-height: 17px;
 }
 
+ul, li {
+  font-family: 'gilroy-normal', sans-serif;
+  font-size: 14px;
+}
+
 .telegram, .mail, .phone {
   display: flex;
   align-items: center;
@@ -982,6 +987,116 @@ p, a {
   margin: 10px auto 40px;
   color: #3C3C3C;
   opacity: 0.7;
+}
+
+.products-headertext {
+  text-align: center;
+}
+
+.products ul, .products li {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.products ul {
+  margin-bottom: 25px;
+}
+
+.products li {
+  margin: 0 20px;
+  color: #1E959B;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.products li.active {
+  background-color: #1E959B;
+  transition: all .3s ease-in-out;
+  color: #F8FFFF;
+}
+
+.products li:hover {
+  background-color: #1E959B;
+  transition: all .3s ease-in-out;
+  color: #F8FFFF;
+}
+
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products_list_item {
+  display: none;
+  width: 25%;
+  text-align: center;
+  margin: 0 25px 50px;
+}
+
+.products_list_item_gallery {
+  position: relative;
+  background-color: #c7ceda;
+}
+
+.products_list_item_gallery.style1 {
+  overflow: hidden;
+}
+
+.products_list_item_gallery.style1:hover .products_list_item_caption {
+  transform: translate3d(0, 0, 0);
+  bottom: -1px !important;
+}
+
+.products_list_item_gallery_img {
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.products_list_item_gallery_img img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  margin: 30px auto;
+  transition: all .3s ease-in-out;
+}
+
+.products_list_item_gallery:hover img {
+  transform: scale(1.1);
+}
+
+.products_list_item_caption {
+  text-align: center;
+  background-color: #1E959B;
+  padding: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  transition: all .5s ease 0s;
+  transform: translate3d(0, 100%, 0);
+}
+
+.products_list_item_caption-name {
+  display: block;
+  padding-top: 10px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 10px;
+  color: #F8FFFF;
+}
+
+.products_list_item_caption-desc {
+  color: #F8FFFF;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 480px) {
