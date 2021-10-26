@@ -1232,6 +1232,33 @@ ul, li{
 			margin-top: 40px;
 		}
 	}
+	.products{
+		&-headertext{
+			margin-left: 10px;
+			margin-right: 10px;
+			text-transform: capitalize;
+		}
+		ul{
+			flex-wrap: wrap;
+			li{
+			margin-bottom: 20px;
+			padding: 10px 30px;
+			}
+		}
+		&_list{
+			&_item{
+				width: 100%;
+				&_caption{
+					-webkit-transform: translate3d(0,0,0);
+    			transform: translate3d(0,0,0);
+					&-desc{
+						margin: 0;
+						padding-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width : 768px) {
