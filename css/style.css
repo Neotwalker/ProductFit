@@ -1437,6 +1437,7 @@ ul, li {
     display: none;
   }
   .projects-case_block {
+    margin-left: inherit;
     margin-left: 0;
     padding-top: 0;
     margin: 0 auto;
@@ -1679,7 +1680,7 @@ ul, li {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   .footer-desctop_menu_logo {
     display: none;
   }
