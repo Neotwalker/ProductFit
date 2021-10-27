@@ -1711,6 +1711,9 @@ ul, li{
 			&-item{
 				margin: 0 auto;
 			}
+			&-decoration.bottom{
+				display: none;
+			}
 		}
 	}
 	.projects{

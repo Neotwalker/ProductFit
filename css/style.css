@@ -1720,6 +1720,9 @@ ul, li {
   .services-list-item {
     margin: 0 auto;
   }
+  .services-list-decoration.bottom {
+    display: none;
+  }
   .projects-case_block {
     margin-left: 50px;
   }
