@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="570.75" viewBox="0 0 760 570.75">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="760" height="570.75" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Прямоугольник_114" data-name="Прямоугольник 114" width="634.567" height="165.942" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_1428" data-name="Сгруппировать 1428" transform="translate(-1104 -3763)">
+    <g id="Сгруппировать_1417" data-name="Сгруппировать 1417" transform="translate(0 1788)">
+      <g id="Сгруппировать_1407" data-name="Сгруппировать 1407" transform="translate(851)">
+        <g id="Сгруппировать_1371" data-name="Сгруппировать 1371" transform="translate(0 -76)">
+          <g id="Повторить_сетку_4" data-name="Повторить сетку 4" transform="translate(253 2051)" clip-path="url(#clip-path)">
+            <g id="Сгруппировать_1361" data-name="Сгруппировать 1361" transform="translate(-1249 -178)">
+              <g id="Сгруппировать_1343" data-name="Сгруппировать 1343" transform="translate(-868 -3450)">
+                <g id="Сгруппировать_1271" data-name="Сгруппировать 1271" transform="translate(1897)">
+                  <g id="Сгруппировать_1262" data-name="Сгруппировать 1262">
+                    <rect id="Прямоугольник_94" data-name="Прямоугольник 94" width="760" height="570.75" rx="75" transform="translate(220 3628)" fill="#12c9a8"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Сгруппировать_1426" data-name="Сгруппировать 1426" transform="translate(1167 3965)" clip-path="url(#clip-path-2)">
+      <text id="FitClassHub" transform="translate(194.617 105.098)" fill="#fff" font-size="91" font-family="FiraSansCondensed-Regular, Fira Sans"><tspan x="0" y="0" letter-spacing="-0.031em">F</tspan><tspan y="0">it</tspan><tspan y="0" letter-spacing="-0.009em">C</tspan><tspan y="0" letter-spacing="-0.004em">l</tspan><tspan y="0" letter-spacing="-0.006em">a</tspan><tspan y="0" letter-spacing="-0.009em">s</tspan><tspan y="0">sHub</tspan></text>
+      <path id="Контур_4089" data-name="Контур 4089" d="M33.184,87.413H0V71.662A71.636,71.636,0,0,1,71.665,0H94.283A71.649,71.649,0,0,1,165.87,68.676H129.928l-3.359,6.457-23.294,44.751L68.115,37.1l-3.953-9.294L59.5,36.764Z" transform="translate(-0.003 0)" fill="#fff"/>
+      <path id="Контур_4090" data-name="Контур 4090" d="M165.912,42.759v17.8a71.68,71.68,0,0,1-71.658,71.662H71.632A71.6,71.6,0,0,1,.011,61.5h37.88l1.418-2.762L63.421,12.34l35.2,82.785,3.919,9.256,4.665-8.92,27.429-52.7Z" transform="translate(0.03 33.717)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
