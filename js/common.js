@@ -43,11 +43,11 @@ $(document).ready(function() {
 				0:{
 					items: 1
 				},
-				480:{
-					items: 1
+				560:{
+					items: 2
 				},
 				768:{
-					items: 2
+					items: 3
 				},
 				1024:{
 					items: 3
@@ -128,7 +128,7 @@ $(document).ready(function() {
 	});
 
 	$("#products_grid").mixItUp();
-	
+
 	$('.products li').click(function(){
 		$('.products li').removeClass('active');
 		$(this).addClass('active');
