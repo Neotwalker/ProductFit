@@ -593,6 +593,10 @@ ul, li{
 
 .services{
 	margin-bottom: 120px;
+	position: relative;
+	&-wrp{
+		position: relative;
+	}
 	&-list{
 		display: flex;
     justify-content: space-around;
@@ -604,9 +608,10 @@ ul, li{
 			height: 154px;
 			position: relative;
 			top: 220px;
-			.bottom{
-				top: 320px;
-			}
+		}
+		&-decoration.bottom{
+			position: absolute;
+			top: 600px;
 		}
 		&-item{
 			background-color: #fff;
@@ -1114,10 +1119,11 @@ ul, li{
 			&-item{
 				margin: 0 auto;
 			}
-			.bottom{
+			&-decoration.bottom{
 				display: none;
 			}
 		}
+		
 	}
 	.submit{
 		&-wrp{
@@ -1317,7 +1323,7 @@ ul, li{
 			&-item{
 				margin: 0 auto;
 			}
-			.bottom{
+			&-decoration.bottom{
 				display: none;
 			}
 		}
@@ -1576,7 +1582,7 @@ ul, li{
 			&-item{
 				margin: 0 auto;
 			}
-			.bottom{
+			&-decoration.bottom{
 				display: none;
 			}
 		}
@@ -1704,9 +1710,6 @@ ul, li{
 			display: block;
 			&-item{
 				margin: 0 auto;
-			}
-			.bottom{
-				display: none;
 			}
 		}
 	}

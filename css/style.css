@@ -664,6 +664,11 @@ ul, li {
 
 .services {
   margin-bottom: 120px;
+  position: relative;
+}
+
+.services-wrp {
+  position: relative;
 }
 
 .services-list {
@@ -681,8 +686,9 @@ ul, li {
   top: 220px;
 }
 
-.services-list-decoration .bottom {
-  top: 320px;
+.services-list-decoration.bottom {
+  position: absolute;
+  top: 600px;
 }
 
 .services-list-item {
@@ -1226,7 +1232,7 @@ ul, li {
   .services-list-item {
     margin: 0 auto;
   }
-  .services-list .bottom {
+  .services-list-decoration.bottom {
     display: none;
   }
   .submit-wrp_block_headertext, .submit-wrp_block_text {
@@ -1400,7 +1406,7 @@ ul, li {
   .services-list-item {
     margin: 0 auto;
   }
-  .services-list .bottom {
+  .services-list-decoration.bottom {
     display: none;
   }
   .advantage-block_flex {
@@ -1613,7 +1619,7 @@ ul, li {
   .services-list-item {
     margin: 0 auto;
   }
-  .services-list .bottom {
+  .services-list-decoration.bottom {
     display: none;
   }
   .submit-wrp {
@@ -1713,9 +1719,6 @@ ul, li {
   }
   .services-list-item {
     margin: 0 auto;
-  }
-  .services-list .bottom {
-    display: none;
   }
   .projects-case_block {
     margin-left: 50px;
