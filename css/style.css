@@ -994,6 +994,24 @@ ul, li {
   text-align: center;
 }
 
+.products-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.products-info-headertext {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.products-info-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1E959B;
+  margin-bottom: 25px;
+}
+
 .products ul, .products li {
   display: flex;
   list-style-type: none;

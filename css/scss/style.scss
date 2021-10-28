@@ -877,6 +877,22 @@ ul, li{
 	&-headertext{
 		text-align: center;
 	}
+	&-info{
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 100px 0;
+			&-headertext{
+				text-transform: capitalize;
+				text-align: center;
+			}
+			&-text{
+				font-size: 16px;
+				line-height: 26px;
+				color: $color-headers;
+				margin-bottom: 25px;
+			}
+	}
+
 	ul, li{
 		display: flex;
 		list-style-type: none;
