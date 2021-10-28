@@ -1009,6 +1009,7 @@ ul, li {
   font-size: 16px;
   line-height: 26px;
   color: #1E959B;
+  text-align: justify;
   margin-bottom: 25px;
 }
 
@@ -1356,6 +1357,10 @@ ul, li {
     margin-right: 10px;
     text-transform: capitalize;
   }
+  .products-info-text {
+    padding: 0 20px;
+    font-size: 17px;
+  }
   .products ul {
     flex-wrap: wrap;
   }
@@ -1576,6 +1581,9 @@ ul, li {
   }
   .footer-desctop_menu_list {
     display: none;
+  }
+  .products-info-text {
+    padding: 0 20px;
   }
 }
 
