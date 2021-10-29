@@ -2455,12 +2455,11 @@ ul, li{
 @media (min-width: 1201px) and (max-width: 1440px){
 	.services{
 		&-list{
-			display: block;
 			&-item{
-				margin: 0 auto;
+				margin: 0 auto 120px;
 			}
 			&-decoration.bottom{
-				display: none;
+				display: block;
 			}
 		}
 	}
