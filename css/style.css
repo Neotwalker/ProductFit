@@ -2403,21 +2403,6 @@ ul, li {
   .services-list-decoration.bottom {
     display: none;
   }
-  .projects-case_block {
-    margin-left: 50px;
-  }
-  .projects-list {
-    display: block;
-  }
-  .projects-list-item:last-child {
-    margin: auto;
-  }
-  .projects-mob_img {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    text-align: center;
-  }
 }
 
 /* Custom, iPhone Retina */
