@@ -2051,6 +2051,12 @@ ul, li {
   .services-list-decoration.bottom {
     display: none;
   }
+  .advantages-slider button.owl-prev {
+    left: -5px;
+  }
+  .advantages-slider button.owl-next {
+    right: -5px;
+  }
   .advantage-block_flex {
     flex-wrap: wrap-reverse;
   }

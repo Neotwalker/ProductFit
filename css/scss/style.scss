@@ -2020,6 +2020,16 @@ ul, li{
 			}
 		}
 	}
+	.advantages{
+		&-slider{
+			button.owl-prev{
+				left: -5px;
+			}
+			button.owl-next{
+				right: -5px;
+			}
+		}
+	}
 	.advantage{
 		&-block{
 			&_flex{
