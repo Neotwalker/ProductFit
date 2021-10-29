@@ -75,7 +75,6 @@ $(document).ready(function () {
 		}
 
 		sync2.on("click", ".owl-item", function (e) {
-			e.preventDefault();
 			var number = $(this).index();
 			sync1.data('owl.carousel').to(number, 300, true);
 		});
