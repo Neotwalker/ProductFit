@@ -1192,8 +1192,10 @@ ul, li{
 			&-decoration.bottom{
 				display: none;
 			}
+			button.owl-prev, button.owl-next{
+				top: 45%;
+			}
 		}
-		
 	}
 	.submit{
 		&-wrp{

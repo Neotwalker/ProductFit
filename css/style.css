@@ -1316,6 +1316,9 @@ ul, li {
   .services-list-decoration.bottom {
     display: none;
   }
+  .services-list button.owl-prev, .services-list button.owl-next {
+    top: 45%;
+  }
   .submit-wrp_block_headertext, .submit-wrp_block_text {
     display: none;
   }
