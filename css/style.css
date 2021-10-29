@@ -1308,6 +1308,10 @@ ul, li {
   }
   .services-list-item {
     margin: 0 auto;
+    width: 250px;
+  }
+  .services-list-item_img {
+    left: 32px;
   }
   .services-list-decoration.bottom {
     display: none;

@@ -1184,6 +1184,10 @@ ul, li{
 			display: block;
 			&-item{
 				margin: 0 auto;
+				width: 250px;
+				&_img{
+					left: 32px;
+				}
 			}
 			&-decoration.bottom{
 				display: none;
