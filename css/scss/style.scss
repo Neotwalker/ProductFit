@@ -559,6 +559,9 @@ ul, li{
 		text-transform: uppercase;
 		font-weight: bold;
 		margin: 0 auto;
+		&:hover{
+			opacity: 0.7;
+		}
 	}
 }
 .banner{
