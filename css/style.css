@@ -2394,11 +2394,31 @@ ul, li {
 }
 
 @media (min-width: 1201px) and (max-width: 1440px) {
+  .services-list {
+    display: block;
+    position: relative;
+  }
   .services-list-item {
-    margin: 0 auto 120px;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .services-list-decoration.bottom {
+    display: none;
+  }
+  .projects-case_block {
+    margin-left: 50px;
+  }
+  .projects-list {
     display: block;
+  }
+  .projects-list-item:last-child {
+    margin: auto;
+  }
+  .projects-mob_img {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 
