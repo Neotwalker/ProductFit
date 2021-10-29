@@ -291,6 +291,30 @@ ul, li{
 		text-align: center;
     padding-bottom: 37px;
 	}
+	.owl-carousel{
+		position: relative;
+		display: none;
+		button.owl-prev, button.owl-next {
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+			border: none;
+			background: inherit;
+		}
+		button.owl-prev {
+			left: 5px;
+		}
+		button.owl-next {
+			right: 5px;
+		}
+		button.owl-prev i, button.owl-next i{
+			color: $color-headers;
+		}
+		&_image img{
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	}
 	&-slider{
 		position: relative;
 		button.owl-prev, button.owl-next {
@@ -479,24 +503,6 @@ ul, li{
 			}
 		}
 	}
-	&-button{
-		display: block;
-		max-width: 235px;
-		margin: 0 auto;
-		font-size: 16px;
-    line-height: 20px;
-    color: #1E959B;
-    padding: 25px 63px;
-    text-align: center;
-    border: 1px solid #1E959B;
-    box-shadow: 0px 5px 10px rgba(30, 149, 155, 20%);
-    border-radius: 20px;
-    outline: none;
-    text-transform: uppercase;
-		&:hover{
-			opacity: 0.7;
-		}
-	}
 	&-case{
 		background-color: $color-block;
 		min-height: 380px;
@@ -512,10 +518,15 @@ ul, li{
 			&_headertext, &_text{
 				color: $color-main;
 			}
+			&_text{
+				margin-bottom: 30px;
+			}
 			&_button{
+				font-weight: normal;
 				background-color: $color-main;
 				color: $color-block;
 				max-width: 280px;
+				display: block;
 				&:hover{
 					opacity: 0.8;
 				}
@@ -535,6 +546,19 @@ ul, li{
 	}
 	&-mob_img{
 		display: none;
+	}
+	&-button{
+		display: block;
+		text-align: center;
+		max-width: 150px;
+		box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+		border-radius: 20px;
+		padding: 25px 60px;
+		border: 1px solid $color-headers;
+		color: $color-headers;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 0 auto;
 	}
 }
 .banner{
@@ -615,7 +639,7 @@ ul, li{
 		}
 		&-item{
 			background-color: #fff;
-			width: 300px;
+			max-width: 300px;
 			background: linear-gradient( 180deg , #FFFFFF 0%, #F7F9FD 100%);
 			box-shadow: 0px 5px 10px rgba(30, 149, 155, 50%);
 			border-radius: 30px;
@@ -994,6 +1018,13 @@ ul, li{
 		}
 	}
 }
+@media only screen and (max-width : 320px) {
+	.header{
+		&-main{
+			background-size: 115%;
+		}
+	}
+}
 @media only screen and (max-width : 480px) {
 	.wrapper{
 		display: none;
@@ -1010,6 +1041,7 @@ ul, li{
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
 			background-position: 87% 136%;
+			background-size: 125%;
 			&-info{
 				margin-top: 0;
 				&-headtext{
@@ -1059,8 +1091,18 @@ ul, li{
 		margin: 0 auto;
 		margin-top: 30px;
 	}
+	.advantages{
+		text-align: center;
+		&-menu{
+			display: none;
+		}
+		.owl-carousel{
+			display: block;
+		}
+	}
 	.advantage{
 		&-block{
+			display: none;
 			&_flex{
 				flex-wrap: wrap-reverse;
 			}
@@ -1072,6 +1114,15 @@ ul, li{
 					padding: 0 20px;
 				}
 			}
+			&_image{
+				padding: 0 20px 20px;
+				img{
+					width: 100% !important;
+				}
+			}
+		}
+		&-block.block-active{
+			display: none;
 		}
 	}
 	.projects{
@@ -1124,7 +1175,7 @@ ul, li{
 			}
 		}
 		&-button{
-			max-width: 190px;
+			max-width: 150px;
 		}
 	}
 	.banner{
@@ -1286,8 +1337,318 @@ ul, li{
 		}
 	}
 }
-
-@media (min-width: 481px) and (max-width : 768px) {
+@media (min-width: 481px) and (max-width: 560px){
+	.wrapper{
+		display: none;
+	}
+	.header{
+		&-menu{
+			&-logo{
+				margin-left: 0;
+			}
+		}
+		&-main{
+			align-items: baseline;
+			flex-wrap: wrap;
+			background-image: url('../img/header_picture.png');
+			background-repeat: no-repeat;
+			background-position: 87% 136%;
+			&-info{
+				margin-top: 0;
+				&-headtext{
+					text-align: center;
+				}
+				&-text{
+					margin-left: 23px;
+					margin-right: 23px;
+				}
+				&-button{
+					margin: 0 auto;
+				}
+			}
+			&-image{
+				display: none;
+			}
+		}
+		&-case{
+			height: 45vh;
+			button.owl-prev, button.owl-next {
+				position: absolute;
+				top: auto;
+				margin-top: 16px;
+				border: none;
+				background: inherit;
+			}
+			button.owl-prev{
+				left: 5px;
+			}
+			button.owl-next{
+				right: 5px;
+			}
+			.owl-item img{
+				width: 100% !important;
+			}
+			button.owl-dot{
+				margin-right: 55px;
+			}
+		}
+	}
+	.button_desc{
+		display: none;
+	}
+	.button_mob{
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.advantages{
+		text-align: center;
+		padding-bottom: 90px;
+		&-menu{
+			display: none;
+		}
+		.owl-carousel{
+			display: block;
+		}
+	}
+	.advantage{
+		&-block{
+			display: none;
+			&_flex{
+				flex-wrap: wrap-reverse;
+			}
+			&_info{
+				.button_desc{
+					display: none;
+				}
+			}
+			&_image{
+				padding: 0 20px 20px;
+				.button_mob{
+					display: block;
+					max-width: 300px;
+					margin: 30px auto 0;
+				}
+				img{
+					width: 100% !important;
+				}
+			}
+		}
+		&-block.block-active{
+			display: none;
+		}
+	}
+	.projects{
+		margin-bottom: 90px;
+		&-list{
+			display: block;
+			position: relative;
+			&-item{
+				margin: 0 auto;
+				&:last-child{
+					margin: auto;
+				}
+			}
+		}
+		&-mob_img{
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		&-case{
+			background-color: initial;
+			&_block{
+				margin-left: 0;
+				padding-top: 0;
+				text-align: center;
+				&_headertext, &_text{
+					color: $color-headers;
+				}
+				&_button{
+					margin: 0 auto;
+					margin-top: 30px;
+				}
+			}
+			&_image{
+				display: none;
+			}
+			&_mob{
+				display: block;
+				background-color: $color-block;
+				min-height: 240px;
+				&_image{
+					position: absolute;
+					top: 235px;
+					right: -40px;
+					img{
+						max-width: 425px;
+					}
+				}
+			}
+		}
+	}
+	.banner{
+		display: none;
+	}
+	.services{
+		&-list{
+			display: block;
+			&-item{
+				margin: 0 auto;
+			}
+			&-decoration.bottom{
+				display: none;
+			}
+		}
+		
+	}
+	.submit{
+		&-wrp{
+			&_block{
+				&_headertext, &_text{
+					display: none;
+				}
+			}
+		}
+		&-image{
+			max-width: 100%;
+			padding-bottom: 55px;
+			padding-left: 50px;
+			box-sizing: border-box;
+			margin-right: 0;
+		}
+	}
+	.cart{
+		margin-top: 120px;
+		&-wrp{
+			flex-wrap: wrap;
+			&-left{
+				margin-bottom: 50px;
+				img{
+					max-width: 200px;
+					left: calc(25% - 5px);
+				}
+			}
+			&-info{
+				&_headertext{
+					text-align: center;
+					margin: 0 20px 50px;
+				}
+				&_text{
+					margin: 0 20px;
+					background-color: $color-headers;
+					color: $color-main;
+					padding: 25px 50px;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+	.footer-desctop{
+		&_menu{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: initial;
+			flex-direction: column;
+			&_logo{
+				display: none;
+			}
+			&_wrp{
+				flex-wrap: wrap;
+				&_block_1, &_block_2{
+					display: none;
+				}
+				&_info{
+					padding-top: 35px;
+				}
+			}
+			&_list{
+				display: none;
+			}
+			&_mobile{
+				&_block_1{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					a{
+						color: $color-headers;
+						font-size: 16px;
+					}
+				}
+				&_contactus{
+					display: block;
+					text-align: center;
+					font-size: 16px;
+					font-weight: 700;
+					margin-top: 35px;
+					margin-bottom: 35px;
+					width: 100%;
+					color: $color-headers;
+				}
+				&_block_2{
+					display: flex;
+					justify-content: space-around;
+					a{
+						font-weight: 700;
+						font-size: 16px;
+					}
+					&_list{
+						display: flex;
+						list-style-type: none;
+						&_item{
+							padding-right: 30px;
+							&:last-child{
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+			&_mobile{
+				display: block;
+			}
+		}
+		&_copyright{
+			margin-top: 40px;
+		}
+	}
+	.products{
+		&-headertext{
+			margin-left: 10px;
+			margin-right: 10px;
+			text-transform: capitalize;
+		}
+		&-info{
+			&-text{
+				padding: 0 20px;
+				font-size: 17px;
+			}
+		}
+		ul{
+			flex-wrap: wrap;
+			li{
+			margin-bottom: 20px;
+			padding: 10px 30px;
+			}
+		}
+		&_list{
+			&_item{
+				width: 100%;
+				&_caption{
+					-webkit-transform: translate3d(0,0,0);
+    			transform: translate3d(0,0,0);
+					&-desc{
+						margin: 0;
+						padding-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 560px) and (max-width : 768px) {
 	.header{
 		&-menu{
 			&-logo{
