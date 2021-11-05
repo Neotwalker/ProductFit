@@ -9,6 +9,7 @@ $(document).ready(function () {
 		$(".advantages-block").removeClass("active");
 		$(this).addClass("active");
 	});
+	
 	if ($(window).innerWidth() <= 560) {
 		var sync1 = $("#sync1");
 		var sync2 = $("#sync2");

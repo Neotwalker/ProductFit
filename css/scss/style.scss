@@ -26,6 +26,20 @@ $color-block: #1E959B;
 	font-weight: bold;
 	font-style: normal;
 }
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize){
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$pcSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+html{
+	font-size: calc(14px + 10 * ((100vw - 320px) / 1440));
+}
 body, html{
 	background-color: $color-main;
 	margin: 0;
@@ -38,8 +52,8 @@ body, html{
 	margin: 0 auto;
 	&-fluid{
 		max-width: 100%;
-    margin: 0 auto;
-    display: flex;
+    	margin: 0 auto;
+    	display: flex;
 		align-items: center;
 	}
 }
@@ -50,19 +64,19 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'gilroy-bold', sans-serif;
 	font-weight: bold;
 	color: $color-headers;
-	font-size: 32px;
 	text-transform: uppercase;
+	@include adaptiv-font(32, 24);
 }
 p, a{
 	font-family: 'gilroy-normal', sans-serif;
 	text-decoration: none;
-	font-size: 14px;
+	@include adaptiv-font(14, 14);
 	color: $color-text;
 	line-height: 17px;
 }
 ul, li{
 	font-family: 'gilroy-normal', sans-serif;
-	font-size: 14px;
+	@include adaptiv-font(14, 14);
 }
 .telegram, .mail, .phone{
 	display: flex;
@@ -79,7 +93,7 @@ ul, li{
 	}
 }
 .button{
-	font-size: 14px;
+	@include adaptiv-font(16, 14);
 	line-height: 17px;
 	text-align: center;
 	box-shadow: 0px 5px 10px rgba(30, 149, 155, 50%);
@@ -289,7 +303,7 @@ ul, li{
 	padding-bottom: 120px;
 	&-menu{
 		text-align: center;
-    padding-bottom: 37px;
+    	padding-bottom: 37px;
 	}
 	.owl-carousel{
 		position: relative;
@@ -336,25 +350,24 @@ ul, li{
 	}
 	&-block{
 		display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0px 25px;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 0px 25px;
 		margin-right: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: transparent;
-    font-size: 18px;
-    font-weight: 500;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		background-color: transparent;
+		font-weight: 500;
 		margin-top: 10px;
-    text-align: center;
+    	text-align: center;
 		width: 160px;
 		&:hover{
 			box-shadow: 0px 10px 20px -5px rgba(30, 149, 155, 50%);
@@ -373,7 +386,6 @@ ul, li{
 			padding-top: 20px;
 			box-sizing: border-box;
 			text-transform: uppercase;
-			font-size: 14px;
 			white-space: nowrap;
 		}
 	}
@@ -405,6 +417,7 @@ ul, li{
 		&_flex{
 			display: flex;
 			justify-content: space-evenly;
+			align-items: center;
 		}
 		&_image{
 			max-width: 600px;
@@ -489,7 +502,7 @@ ul, li{
 				max-width: 80%;
 			}
 			&_header{
-				font-size: 16px;
+				@include adaptiv-font(16, 14);
 			}
 			&_text{
 				padding: 0 45px;
@@ -626,8 +639,8 @@ ul, li{
 	}
 	&-list{
 		display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		position: relative;
 		&-decoration{
 			width: 100%;
@@ -653,7 +666,8 @@ ul, li{
 			&_img{
 				position: absolute;
 				top: -60px;
-				left: 57px;
+				left: 0;
+				right: 0;
 				&_fon{
 					height: auto;
 					max-width: 100%;
@@ -665,7 +679,7 @@ ul, li{
 				}
 				&_svg{
 					position: absolute;
-					left: 40px;
+					left: 33%;
 					top: 40px;
 				}
 			}
@@ -679,7 +693,6 @@ ul, li{
     		padding-top: 132px;
 			}
 			.button{
-				font-size: 14px;
 				line-height: 17px;
 				text-align: center;
 				box-shadow: 0px 5px 10px rgba(30, 149, 155, 50%);
@@ -754,7 +767,10 @@ ul, li{
 			img{
 				position: absolute;
 				top: -65px;
-				left: 80px;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
 				max-width: 240px;
 			}
 			&-block{
@@ -859,21 +875,16 @@ ul, li{
 				a{
 					color: $color-headers;
 					margin-bottom: 15px;
-					&:first-child{
-						margin-bottom: 10px;
-					}
 				}
 			}
 			&_info{
 				display: flex;
-				max-width: 400px;
+				max-width: 600px;
 				align-items: center;
 				&_img{
 					padding-right: 20px;
 				}
 				&_text{
-					font-size: 14px;
-					line-height: 17px;
 					color: $color-text;
 				}			
 			}
@@ -1021,6 +1032,11 @@ ul, li{
 		}
 	}
 }
+@media only screen and (max-width: 767px){
+	h1, h2, h3, h4, h5, h6{
+		font-size: calc(24px + (8 + 8 * 0.7) * ((100vw - 320px) / 1440));
+	}
+}
 @media only screen and (max-width : 360px) {
 	.wrapper{
 		display: none;
@@ -1042,7 +1058,6 @@ ul, li{
 				margin-top: 0;
 				&-headtext{
 					text-align: center;
-					font-size: 24px;
 					padding: 0 20px;
 				}
 				&-text{
@@ -1221,7 +1236,6 @@ ul, li{
 				margin-bottom: 50px;
 				img{
 					max-width: 200px;
-					left: calc(25% - 5px);
 				}
 			}
 			&-info{
@@ -2227,7 +2241,6 @@ ul, li{
 		}
 	}
 }
-
 @media (min-width : 769px) and (max-width : 992px) {
 	.header{
 		&-menu{
@@ -2236,6 +2249,13 @@ ul, li{
 			}
 			.wrapper{
 				display: none;
+			}
+		}
+		&-main{
+			&-image{
+				img{
+					max-width: 500px;
+				}
 			}
 		}
 		&-case{
@@ -2394,10 +2414,15 @@ ul, li{
 		}
 	}
 }
-
-/* Large Devices, Wide Screens */
 @media (min-width: 993px) and (max-width : 1200px) {
 	.header{
+		&-main{
+			&-image{
+				img{
+					max-width: 500px;
+				}
+			}
+		}
 		&-case{
 			.owl-item img{
 				width: 80% !important;
@@ -2460,8 +2485,16 @@ ul, li{
 		}
 	}
 }
-
 @media (min-width: 1201px) and (max-width: 1440px){
+	.header{
+		&-main{
+			&-image{
+				img{
+					max-width: 500px;
+				}
+			}
+		}
+	}
 	.services{
 		&-list{
 			display: block;
@@ -2499,35 +2532,148 @@ ul, li{
 		}
 	}
 }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media (min-width: 1441px) and (max-width: 2560px){
+	html{
+		font-size: calc(30px + 15 * ((100vw - 2560px) / 4096));
+	}
+	.container{
+		max-width: 2560px;
+	}
+	p, a{
+		font-size: calc(18px + 14 * ((100vw - 2560px) / 4096));
+		line-height: 25px;
+	}
+	.button{
+		letter-spacing: 2px;
+	}
+	.header{
+		&-main{
+			justify-content: space-around;
+			&-info{
+				max-width: 60%;
+			}
+			&-image{
+				max-width: 40%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.advantages{
+		&-block{
+			width: 15%;
+			margin-right: 20px;
+			&-img{
+				width: 50%;
+			}
+		}
+	}
+	.advantage{
+		&-block{
+			&_image{
+				max-width: 40%;
+			}
+			&_info{
+				max-width: 30%;
+			}
+		}
+	}
+	.projects{
+		&-list{
+			&-item{
+				max-width: 25%;
+				margin-right: 40px;
+				&:nth-child(3), &:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		&-button{
+			max-width: 300px;
+			padding: 45px 60px;
+		}
+		&-case{
+			&_block{
+				&_button{
+					max-width: 80%;
+				}
+			}
+		}
+	}
+	.banner{
+		padding-top: 30px;
+		min-height: 600px;
+		align-items: center;
+		.container-fluid{
+			width: 100%;
+			margin: auto;
+			justify-content: center;
+		}
+		&-wrp{
+			padding-top: 60px;
+			&-img{
+				min-width: 700px;
+			}
+		}
+	}
+	.services{
+		&-list{
+			&-item{
+				width: 23%;
+				&_img{
+					&_circle{
+						width: 230px;
+						height: 230px;
+					}
+					&_svg{
+						width: 100%;
+						left: 0;
+						height: 142px;
+					}
+				}
+				&_headertext{
+					padding-top: 200px;
+					min-height: 60px;
+					@include adaptiv-font(24, 16);
+				}
+				.button{
+					display: block;
+					max-width: 350px;
+					margin: 0 auto;
+				}
+			}
+			&-decoration{
+				height: 180px;
+				top: 285px;
+			}
+			&-decoration.bottom{
+				top: 780px;
+			}
+		}
+	}
+	.cart{
+		&-wrp{
+			&-left{
+				max-width: 50%;
+				width: 25%;
+				.button{
+					max-width: 70%;
+				}
+			}
+			&-info{
+				max-width: 50%;
+			}
+		}
+	}
+	.submit{
+		&-wrp{
+			&_block{
+				max-width: 50%;
+				&_button{
+					max-width: 50%;
+				}
+			}
+		}
+	}
 }
