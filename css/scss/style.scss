@@ -1201,7 +1201,9 @@ ul, li{
 				margin: 0 auto;
 				width: 250px;
 				&_img{
-					left: 32px;
+					&_svg{
+						left: 29%;
+					}
 				}
 			}
 			&-decoration.bottom{

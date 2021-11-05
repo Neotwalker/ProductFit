@@ -1367,8 +1367,8 @@ ul, li {
     margin: 0 auto;
     width: 250px;
   }
-  .services-list-item_img {
-    left: 32px;
+  .services-list-item_img_svg {
+    left: 29%;
   }
   .services-list-decoration.bottom {
     display: none;
