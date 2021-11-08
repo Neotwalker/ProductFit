@@ -1248,6 +1248,7 @@ ul, li {
   }
   .header-main-info-button {
     margin: 0 auto;
+    width: 90%;
   }
   .header-main-image {
     display: none;
