@@ -2097,7 +2097,7 @@ ul, li {
   }
   .header-main-info-button {
     margin: 120px auto 0;
-    justify-content: baseline;
+    justify-content: center;
   }
   .header-main-info-headtext {
     text-align: center;
