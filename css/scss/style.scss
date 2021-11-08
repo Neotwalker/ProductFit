@@ -729,8 +729,12 @@ ul, li{
 			max-width: 500px;
 			&_headertext{
 				margin-top: 0;
+        text-align: justify;
 				margin-bottom: 20px;
 			}
+      &_text{
+        text-align: justify;
+      }
 			&_button{
 				display: block;
 				max-width: 370px;

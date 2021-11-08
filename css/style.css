@@ -868,7 +868,12 @@ ul, li {
 
 .submit-wrp_block_headertext {
   margin-top: 0;
+  text-align: justify;
   margin-bottom: 20px;
+}
+
+.submit-wrp_block_text {
+  text-align: justify;
 }
 
 .submit-wrp_block_button {
