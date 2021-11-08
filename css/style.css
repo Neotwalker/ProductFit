@@ -228,6 +228,10 @@ ul, li {
   animation-iteration-count: 1;
 }
 
+.header-menu-mobile {
+  max-width: 30%;
+}
+
 .header-main {
   display: flex;
   height: 80vh;
@@ -251,7 +255,7 @@ ul, li {
 }
 
 .header-main-info-button {
-  width: 70%;
+  width: 60%;
   display: block;
 }
 

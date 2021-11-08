@@ -190,6 +190,9 @@ ul, li{
 				}
 			}
 		}
+    &-mobile{
+      max-width: 30%;
+    }
 	}
 	&-main{
 		display: flex;
@@ -208,7 +211,7 @@ ul, li{
 				margin-bottom: 50px;
 			}
 			&-button{
-				width: 70%;
+				width: 60%;
     		display: block;
 			}
 		}
