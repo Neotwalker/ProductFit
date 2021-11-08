@@ -255,8 +255,8 @@ ul, li {
 }
 
 .header-main-info-button {
-  width: 60%;
-  display: block;
+  display: flex;
+  justify-content: baseline;
 }
 
 .header-case {
@@ -1249,6 +1249,7 @@ ul, li {
   .header-main-info-button {
     margin: 0 auto;
     width: 90%;
+    justify-content: center;
   }
   .header-main-image {
     display: none;
