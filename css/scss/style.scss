@@ -1072,8 +1072,6 @@ ul, li{
 					margin-right: 23px;
 				}
 				&-button{
-					margin: 0 auto;
-          width: 90%;
           justify-content: center;
 				}
 			}
@@ -1706,7 +1704,7 @@ ul, li{
 					margin-right: 23px;
 				}
 				&-button{
-					margin: 0 auto;
+					justify-content: baseline;
 				}
 			}
 			&-image{
@@ -2013,6 +2011,7 @@ ul, li{
 				margin-top: 0;
 				&-button{
 					margin: 120px auto 0;
+          justify-content: baseline;
 				}
 				&-headtext{
 					text-align: center;
