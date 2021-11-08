@@ -1536,7 +1536,7 @@ ul, li {
     margin-right: 23px;
   }
   .header-main-info-button {
-    margin: 0 auto;
+    justify-content: center;
   }
   .header-main-image {
     display: none;
@@ -1819,7 +1819,7 @@ ul, li {
     margin-right: 23px;
   }
   .header-main-info-button {
-    justify-content: baseline;
+    justify-content: center;
   }
   .header-main-image {
     display: none;
