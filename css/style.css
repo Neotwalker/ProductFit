@@ -133,13 +133,13 @@ ul, li {
 
 @media (max-width: 767px) {
   .button {
-    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   .button {
-    font-size: calc(16px + 2 * (100vw / 1440));
+    font-size: calc(14px + 0 * (100vw / 1440));
   }
 }
 
