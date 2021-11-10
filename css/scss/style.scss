@@ -584,7 +584,7 @@ ul, li{
 	background-image: url('../img/images-banner/Banner_design.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-		background-position: top center;
+  background-position: top center;
 	&-slider{
 		position: relative;
 		button.owl-prev, button.owl-next {
@@ -609,7 +609,7 @@ ul, li{
 		justify-content: space-between;
 		flex-wrap: wrap;
 		background-image: url('../img/images-banner/packground-image.png');
-		background-size: 100% 100%;
+		background-size: cover;
 		background-position: top center;
 		background-repeat: no-repeat;
 		&-header{
@@ -2554,7 +2554,7 @@ ul, li{
 		line-height: 25px;
 	}
 	.button{
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 	.header{
 		&-main{
@@ -2612,8 +2612,6 @@ ul, li{
 		}
 	}
 	.banner{
-		padding-top: 30px;
-		min-height: 600px;
 		align-items: center;
 		.container-fluid{
 			width: 100%;
@@ -2622,6 +2620,7 @@ ul, li{
 		}
 		&-wrp{
 			padding-top: 60px;
+		  min-height: 600px;
 			&-img{
 				min-width: 700px;
 			}
@@ -2647,11 +2646,6 @@ ul, li{
 					min-height: 60px;
 					@include adaptiv-font(24, 16);
 				}
-				.button{
-					display: block;
-					max-width: 350px;
-					margin: 0 auto;
-				}
 			}
 			&-decoration{
 				height: 180px;
@@ -2667,9 +2661,6 @@ ul, li{
 			&-left{
 				max-width: 50%;
 				width: 25%;
-				.button{
-					max-width: 70%;
-				}
 			}
 			&-info{
 				max-width: 50%;

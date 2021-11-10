@@ -729,7 +729,7 @@ ul, li {
   justify-content: space-between;
   flex-wrap: wrap;
   background-image: url("../img/images-banner/packground-image.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -2519,7 +2519,7 @@ ul, li {
     line-height: 25px;
   }
   .button {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   .header-main {
     justify-content: space-around;
@@ -2561,8 +2561,6 @@ ul, li {
     max-width: 80%;
   }
   .banner {
-    padding-top: 30px;
-    min-height: 600px;
     align-items: center;
   }
   .banner .container-fluid {
@@ -2572,6 +2570,7 @@ ul, li {
   }
   .banner-wrp {
     padding-top: 60px;
+    min-height: 600px;
   }
   .banner-wrp-img {
     min-width: 700px;
@@ -2607,11 +2606,6 @@ ul, li {
 }
 
 @media (min-width: 1441px) and (max-width: 3840px) {
-  .services-list-item .button {
-    display: block;
-    max-width: 350px;
-    margin: 0 auto;
-  }
   .services-list-decoration {
     height: 180px;
     top: 285px;
@@ -2622,9 +2616,6 @@ ul, li {
   .cart-wrp-left {
     max-width: 50%;
     width: 25%;
-  }
-  .cart-wrp-left .button {
-    max-width: 70%;
   }
   .cart-wrp-info {
     max-width: 50%;
