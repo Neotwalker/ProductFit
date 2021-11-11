@@ -52,13 +52,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
   h1, h2, h3, h4, h5, h6 {
-    font-size: calc(24px + 13.6 * ((100vw - 320px) / 1440));
+    font-size: calc(30px + 3.4 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   h1, h2, h3, h4, h5, h6 {
-    font-size: calc(32px + 8 * (100vw / 1440));
+    font-size: calc(32px + 2 * (100vw / 1440));
   }
 }
 
@@ -2569,8 +2569,10 @@ ul, li {
     justify-content: center;
   }
   .banner-wrp {
-    padding-top: 60px;
     min-height: 600px;
+  }
+  .banner-wrp-header-text {
+    padding-right: 30px;
   }
   .banner-wrp-img {
     min-width: 700px;

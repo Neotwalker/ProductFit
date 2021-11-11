@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: bold;
 	color: $color-headers;
 	text-transform: uppercase;
-	@include adaptiv-font(32, 24);
+	@include adaptiv-font(32, 30);
 }
 p, a{
 	font-family: 'gilroy-normal', sans-serif;
@@ -2549,6 +2549,7 @@ ul, li{
 	.container{
 		max-width: 2560px;
 	}
+  
 	p, a{
 		font-size: calc(18px + 14 * ((100vw - 2560px) / 4096));
 		line-height: 25px;
@@ -2619,8 +2620,10 @@ ul, li{
 			justify-content: center;
 		}
 		&-wrp{
-			padding-top: 60px;
 		  min-height: 600px;
+      &-header-text{
+        padding-right: 30px;
+      }
 			&-img{
 				min-width: 700px;
 			}
