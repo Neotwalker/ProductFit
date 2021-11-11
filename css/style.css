@@ -732,6 +732,7 @@ ul, li {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  padding: 30px 0;
 }
 
 .banner-wrp-header-date {
@@ -2457,6 +2458,9 @@ ul, li {
   }
   .services-list-decoration.bottom {
     display: none;
+  }
+  .banner-wrp-header-text {
+    max-width: 440px;
   }
   .projects-case_block {
     margin-left: 50px;
