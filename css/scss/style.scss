@@ -581,16 +581,61 @@ ul, li{
 	}
 }
 .banner{
-	background-image: url('../img/images-banner/BBG.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-  background-attachment: fixed;
+	// background-image: url('../img/images-banner/BBG.png');
+	// background-repeat: no-repeat;
+	// background-size: 100% 100%;
+  // background-attachment: fixed;
   position: relative;
   // &-svg{
   //   position: absolute;
   //   height: 100%;
   //   width: 100%;
   // }
+  .circle{
+    &-top{
+      position: absolute;
+      opacity: 0.5;
+      background-color: #1E959B;
+      border-radius: 9px 9px 93px 90px;
+      height: 3rem;
+      z-index: 2;
+      width: 5rem;
+      left: 50px;
+    }
+    &-left_bottom{
+      position: absolute;
+      background-color: #1E959B;
+      border-radius: 0 87px 87px 0;
+      height: 3rem;
+      z-index: 2;
+      width: 1.8rem;
+      opacity: 0.15;
+      bottom: 20px;
+    }
+    &-right_top{
+      position: absolute;
+      background-color: #1E959B;
+      border-radius: 10px 0 0 87px;
+      height: 2rem;
+      z-index: 2;
+      width: 1.8rem;
+      opacity: 0.15;
+      top: 0;
+      right: 0;
+    }
+    &-right_bottom{
+      position: absolute;
+    background-color: #1E959B;
+    border-radius: 87px 87px 5px 5px;
+    height: 4rem;
+    z-index: 2;
+    width: 6rem;
+    opacity: 0.5;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    }
+  }
 	&-slider{
 		position: relative;
 		button.owl-prev, button.owl-next {
