@@ -694,13 +694,11 @@ ul, li {
 }
 
 .banner {
+  background-image: url("../img/images-banner/BBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
   position: relative;
-}
-
-.banner-svg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
 }
 
 .banner-slider {
