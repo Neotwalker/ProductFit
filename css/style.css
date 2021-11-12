@@ -2506,6 +2506,9 @@ ul, li {
   .services-list-decoration.bottom {
     display: none;
   }
+  .banner-wrp {
+    padding: 60px 0;
+  }
   .banner-wrp-header-text {
     max-width: 440px;
   }
@@ -2616,7 +2619,6 @@ ul, li {
   }
   .banner .container-fluid {
     width: 100%;
-    margin: auto;
     justify-content: center;
   }
   .banner-wrp {
