@@ -183,6 +183,7 @@ $(document).ready(function () {
 	slider.owlCarousel({
 		dots: false,
 		nav: true,
+    loop: true,
 		items: 1,
 		responsiveClass: true,
 		navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
