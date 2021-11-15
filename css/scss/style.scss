@@ -548,8 +548,7 @@ ul, li{
 				font-weight: normal;
 				background-color: $color-main;
 				color: $color-block;
-				max-width: 280px;
-				display: block;
+        padding: 20px 25px;
 				&:hover{
 					opacity: 0.8;
 				}

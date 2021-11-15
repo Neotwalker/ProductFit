@@ -658,8 +658,7 @@ ul, li {
   font-weight: normal;
   background-color: #F8FFFF;
   color: #1E959B;
-  max-width: 280px;
-  display: block;
+  padding: 20px 25px;
 }
 
 .projects-case_block_button:hover {
