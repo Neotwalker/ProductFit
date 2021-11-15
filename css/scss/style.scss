@@ -2513,8 +2513,9 @@ ul, li{
 	}
 	.footer-desctop{
 		&_menu{
+      justify-content: space-between;
 			&_logo{
-				display: none;
+				margin-left: 1rem;
 			}
 		}
 	}

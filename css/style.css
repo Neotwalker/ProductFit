@@ -2508,8 +2508,11 @@ ul, li {
     margin-left: 20px;
     margin-right: 20px;
   }
+  .footer-desctop_menu {
+    justify-content: space-between;
+  }
   .footer-desctop_menu_logo {
-    display: none;
+    margin-left: 1rem;
   }
   .services-list {
     display: block;
