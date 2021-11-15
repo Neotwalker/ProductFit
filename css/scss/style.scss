@@ -849,6 +849,7 @@ ul, li{
 					&_text{
 						margin-bottom: 11px;
 						margin-top: 0;
+            height: 40px
 					}
 					&_info{
 						font-family: 'gilroy-normal', sans-serif;
@@ -1305,6 +1306,16 @@ ul, li{
 				img{
 					max-width: 200px;
 				}
+        &-block{
+          &_1{
+            padding-right: 5px;
+            padding-left: 5px;
+            &:last-child{
+              border-right: none;
+              padding-right: 0;
+            }
+          }
+        }
 			}
 			&-info{
 				&_headertext{
@@ -1616,7 +1627,8 @@ ul, li{
 				margin-bottom: 50px;
 				img{
 					max-width: 200px;
-					left: calc(25% - 5px);
+					left: 0;
+          right: 0;
 				}
 			}
 			&-info{
@@ -1928,7 +1940,8 @@ ul, li{
 				margin-bottom: 50px;
 				img{
 					max-width: 200px;
-					left: calc(25% - 5px);
+					left: 0;
+          right: 0;
 				}
 			}
 			&-info{
