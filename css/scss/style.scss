@@ -840,10 +840,11 @@ ul, li{
 					border-right: 2px solid rgba(30,	149,	155, 0.3);
 					box-sizing: border-box;
 					padding-right: 40px;
+          width: 50%;
+          padding-left: 40px;
 					&:last-child{
 						border-right: none;
 						padding-right: 0;
-						padding-left: 40px;
 					}
 					&_text{
 						margin-bottom: 11px;
