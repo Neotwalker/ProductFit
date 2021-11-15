@@ -2639,6 +2639,9 @@ ul, li {
   .projects-button {
     max-width: 300px;
   }
+  .projects-case_block {
+    margin-left: 150px;
+  }
   .projects-case_block_button {
     max-width: 80%;
   }
