@@ -87,13 +87,13 @@ ul, li {
 
 @media (max-width: 767px) {
   ul, li {
-    font-size: calc(14px + 0 * ((100vw - 320px) / 1440));
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   ul, li {
-    font-size: calc(14px + 0 * (100vw / 1440));
+    font-size: calc(20px + 6 * (100vw / 1440));
   }
 }
 
@@ -116,7 +116,6 @@ ul, li {
 }
 
 .button {
-  line-height: 17px;
   text-align: center;
   box-shadow: 0px 5px 10px #1e959b;
   padding: 24px 25px;
@@ -194,14 +193,19 @@ ul, li {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   justify-content: space-around;
+}
+
+.header-menu .wrapper {
+  align-items: center;
 }
 
 .header-menu .wrapper .button {
   font-weight: 400;
   line-height: 18px;
   padding: 23px 40px;
+  height: 65px;
 }
 
 .header-menu-logo {
@@ -234,9 +238,10 @@ ul, li {
 
 .header-main {
   display: flex;
-  height: 80vh;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 55px;
+  height: 55vh;
 }
 
 .header-main-info {
@@ -259,9 +264,50 @@ ul, li {
   justify-content: baseline;
 }
 
+.header-main-image img {
+  max-width: 600px;
+}
+
+.header-companies {
+  display: flex;
+  align-items: center;
+  background-color: #1E959B;
+  height: 20vh;
+}
+
+.header-companies-slider {
+  padding: 20px 0;
+  position: relative;
+}
+
+.header-companies-slider button.owl-prev, .header-companies-slider button.owl-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  border: none;
+  background: inherit;
+}
+
+.header-companies-slider button.owl-prev {
+  left: 5px;
+}
+
+.header-companies-slider button.owl-next {
+  right: 5px;
+}
+
+.header-companies-slider button.owl-prev i, .header-companies-slider button.owl-next i {
+  color: #F8FFFF;
+}
+
+.header-companies-slider_image img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .header-case {
   text-align: center;
-  height: 80vh;
+  padding-bottom: 60px;
 }
 
 .header-case button.owl-dot {
@@ -305,40 +351,6 @@ ul, li {
   width: 50% !important;
 }
 
-.companies {
-  background-color: #1E959B;
-}
-
-.companies-slider {
-  padding: 20px 0;
-  position: relative;
-}
-
-.companies-slider button.owl-prev, .companies-slider button.owl-next {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  border: none;
-  background: inherit;
-}
-
-.companies-slider button.owl-prev {
-  left: 5px;
-}
-
-.companies-slider button.owl-next {
-  right: 5px;
-}
-
-.companies-slider button.owl-prev i, .companies-slider button.owl-next i {
-  color: #F8FFFF;
-}
-
-.companies-slider_image img {
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 .slick-track {
   display: flex;
   align-items: center;
@@ -371,7 +383,6 @@ ul, li {
 
 .advantages-menu {
   text-align: center;
-  padding-bottom: 37px;
 }
 
 .advantages .owl-carousel {
@@ -497,7 +508,7 @@ ul, li {
 }
 
 .advantage-block_image {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 .advantage-block_image .button_mob {
@@ -506,7 +517,7 @@ ul, li {
 
 .advantage-block_image img {
   max-width: 100%;
-  min-height: 300px;
+  min-height: 550px;
   padding-top: 50px;
 }
 
@@ -547,7 +558,6 @@ ul, li {
 
 .projects-header {
   text-align: center;
-  padding-bottom: 75px;
 }
 
 .projects-list {
@@ -579,7 +589,7 @@ ul, li {
 
 .projects-list-item {
   margin-right: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   min-height: 320px;
   display: flex;
   flex-direction: column;
@@ -632,7 +642,7 @@ ul, li {
 
 .projects-case_block {
   max-width: 500px;
-  margin-left: 240px;
+  margin-left: 20%;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -866,7 +876,7 @@ ul, li {
   align-items: center;
   text-align: center;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
   color: #1E959B;
   margin-bottom: 33px;
   padding-top: 132px;
@@ -1146,7 +1156,6 @@ ul, li {
 }
 
 .products-info-text {
-  font-size: 16px;
   line-height: 26px;
   color: #1E959B;
   text-align: justify;
@@ -1169,7 +1178,8 @@ ul, li {
 .products li {
   margin: 0 20px;
   color: #1E959B;
-  padding: 7px 20px;
+  padding: 25px 60px;
+  text-align: center;
   border-radius: 5px;
 }
 
@@ -1201,6 +1211,7 @@ ul, li {
 .products_list_item_gallery {
   position: relative;
   background-color: #c7ceda;
+  height: 300px;
 }
 
 .products_list_item_gallery.style1 {
@@ -1269,6 +1280,9 @@ ul, li {
   .wrapper {
     display: none;
   }
+  .header-hidden {
+    height: 18vh;
+  }
   .header-menu-logo {
     margin-left: 0;
   }
@@ -1298,7 +1312,7 @@ ul, li {
     display: none;
   }
   .header-case {
-    height: 45vh;
+    padding-bottom: 0;
   }
   .header-case button.owl-prev, .header-case button.owl-next {
     position: absolute;
@@ -1570,8 +1584,8 @@ ul, li {
     flex-wrap: wrap;
     background-image: url("../img/header_picture.png");
     background-repeat: no-repeat;
-    background-position: 100% 136%;
-    background-size: 125%;
+    background-position: 160% 136%;
+    background-size: 105%;
   }
   .header-main-info {
     margin-top: 0;
@@ -2136,8 +2150,8 @@ ul, li {
     flex-wrap: wrap;
     background-image: url("../img/header_picture.png");
     background-repeat: no-repeat;
-    background-position: 150% 150%;
-    background-size: 110%;
+    background-position: bottom center;
+    background-size: 70%;
   }
   .header-main-info {
     max-width: 500px;
@@ -2479,10 +2493,10 @@ ul, li {
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .header-main-image img {
-    max-width: 500px;
+    max-width: 350px;
   }
   .header-case .owl-item img {
-    width: 80% !important;
+    width: 60% !important;
   }
   .header-case button.owl-next {
     right: 230px;
@@ -2533,6 +2547,9 @@ ul, li {
   .header-main-image img {
     max-width: 500px;
   }
+  .header-case .owl-item img {
+    width: 40% !important;
+  }
   .services-list {
     display: block;
     position: relative;
@@ -2569,11 +2586,20 @@ ul, li {
     max-width: 2560px;
   }
   p, a {
-    font-size: calc(18px + 14 * ((100vw - 2560px) / 4096));
-    line-height: 25px;
+    font-size: calc(20px + 14 * ((100vw - 2560px) / 4096));
+    line-height: 40px;
   }
   .button {
     letter-spacing: 1px;
+  }
+  .header-case {
+    height: 80vh;
+  }
+  .header-case .owl-item img {
+    width: 40% !important;
+  }
+  .products-info-text {
+    line-height: 40px;
   }
   .header-main {
     justify-content: space-around;
@@ -2595,7 +2621,7 @@ ul, li {
     width: 50%;
   }
   .advantage-block_image {
-    max-width: 40%;
+    max-width: 30%;
   }
   .advantage-block_info {
     max-width: 30%;
@@ -2609,10 +2635,12 @@ ul, li {
   }
   .projects-button {
     max-width: 300px;
-    padding: 45px 60px;
   }
   .projects-case_block_button {
     max-width: 80%;
+  }
+  .projects-case .owl-item img {
+    width: 40% !important;
   }
   .banner {
     align-items: center;

@@ -80,7 +80,7 @@ $(document).ready(function () {
 			sync1.data('owl.carousel').to(number, 300, true);
 		});
 	}
-	var companies = $('.companies-slider');
+	var companies = $('.header-companies-slider');
 	companies.owlCarousel({
 		nav: true,
 		dots: false,
