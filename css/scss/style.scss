@@ -414,7 +414,7 @@ ul, li{
 	&-tab-link {
     position: relative;
     display: inline-block;
-    padding: 0 25px;
+    padding: 0 15px;
 		padding-bottom: 30px;
     cursor: pointer;
     background-color: #dddddd;
@@ -432,17 +432,17 @@ ul, li{
 			align-items: center;
 		}
 		&_image{
-			max-width: 550px;
+			max-width: 400px;
 			.button_mob{
 				display: none;
 			}
 			img{
 				max-width: 100%;
-				padding-top: 50px;
+				padding-top: 25px;
 			}
 		}
 		&_info{
-			padding-top: 80px;
+			padding-top: 50px;
 			max-width: 400px;
 			&_header{
 				margin: 0;
@@ -2677,7 +2677,7 @@ ul, li{
 			width: 15%;
 			margin-right: 20px;
 			&-img{
-				width: 50%;
+				width: 40%;
 			}
 		}
 	}

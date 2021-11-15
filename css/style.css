@@ -488,7 +488,7 @@ ul, li {
 .advantages-tab-link {
   position: relative;
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 15px;
   padding-bottom: 30px;
   cursor: pointer;
   background-color: #dddddd;
@@ -508,7 +508,7 @@ ul, li {
 }
 
 .advantage-block_image {
-  max-width: 550px;
+  max-width: 400px;
 }
 
 .advantage-block_image .button_mob {
@@ -517,11 +517,11 @@ ul, li {
 
 .advantage-block_image img {
   max-width: 100%;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .advantage-block_info {
-  padding-top: 80px;
+  padding-top: 50px;
   max-width: 400px;
 }
 
@@ -2633,7 +2633,7 @@ ul, li {
     margin-right: 20px;
   }
   .advantages-block-img {
-    width: 50%;
+    width: 40%;
   }
   .advantage-block_image {
     max-width: 30%;
