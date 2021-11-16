@@ -33,9 +33,10 @@ $(document).ready(function () {
 			})
 			.owlCarousel({
 				items: 1,
+        slideSpeed: 2000,
 				dots: false,
 				nav: false,
-				responsiveRefreshRate: 100
+				responsiveRefreshRate: 200
 			}).on('changed.owl.carousel', syncPosition2);
 
 		function syncPosition(el) {

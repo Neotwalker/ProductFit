@@ -115,6 +115,10 @@ ul, li {
   padding-right: 1em;
 }
 
+button.owl-next:hover, button.owl-prev:hover {
+  opacity: 0.5;
+}
+
 .button {
   text-align: center;
   box-shadow: 0px 5px 10px #1e959b;
@@ -993,9 +997,9 @@ ul, li {
 .cart-wrp-left-block_1 {
   border-right: 2px solid rgba(30, 149, 155, 0.3);
   box-sizing: border-box;
-  padding-right: 40px;
+  padding-right: 20px;
   width: 50%;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .cart-wrp-left-block_1:last-child {
