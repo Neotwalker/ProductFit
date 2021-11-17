@@ -32,6 +32,7 @@ $(document).ready(function () {
 		nav: true,
 		dots: false,
 		responsiveClass: true,
+    loop: true,
 		responsive: {
 			0: {
 				items: 1
@@ -80,6 +81,7 @@ $(document).ready(function () {
 		$('.projects-list').owlCarousel({
 			nav: true,
 			dots: false,
+      loop: true,
 			responsiveClass: true,
 			responsive: {
 				0: {
@@ -105,6 +107,7 @@ $(document).ready(function () {
 		services.owlCarousel({
 			dots: false,
 			nav: true,
+      loop: true,
 			responsive: {
 				0: {
 					items: 1
@@ -140,6 +143,7 @@ $(document).ready(function () {
 	slider_case.owlCarousel({
 		dots: true,
 		nav: true,
+    loop: true,
 		items: 1,
 		responsiveClass: true,
 		navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
