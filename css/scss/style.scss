@@ -92,8 +92,11 @@ ul, li{
 		padding-right: 1em;
 	}
 }
-button.owl-next:hover, button.owl-prev:hover{
+button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   opacity: 0.5;
+}
+.slick-prev, .slick-next{
+  display: none;
 }
 .button{
 	@include adaptiv-font(14, 14);
@@ -323,7 +326,7 @@ button.owl-next:hover, button.owl-prev:hover{
 	.owl-carousel{
 		position: relative;
 		display: none;
-		button.owl-prev, button.owl-next {
+		button.owl-prev, button.owl-next{
 			position: absolute;
 			top: 50%;
 			margin-top: -10px;
@@ -344,6 +347,20 @@ button.owl-next:hover, button.owl-prev:hover{
 			max-width: 100%;
 		}
 	}
+  .slick-slider{
+    .fa-chevron-right{
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      color: $color-headers;
+    }
+    .fa-chevron-left{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: $color-headers;
+    }
+  }
 	&-slider{
 		position: relative;
 		button.owl-prev, button.owl-next {
@@ -382,7 +399,7 @@ button.owl-next:hover, button.owl-prev:hover{
 		background-color: transparent;
 		font-weight: 500;
 		margin-top: 10px;
-    	text-align: center;
+    text-align: center;
 		width: 160px;
 		&:hover{
 			box-shadow: 0px 10px 20px -5px rgba(30, 149, 155, 50%);
@@ -408,7 +425,6 @@ button.owl-next:hover, button.owl-prev:hover{
 		background-color: transparent;
 		-webkit-filter: none;
 		filter: none;
-		color: #1c82e7;
 		background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%) !important;
 		box-shadow: inset 0px 4px 4px rgba(30, 149, 155, 0.5) !important;
 		border-radius: 25px !important;
@@ -436,6 +452,7 @@ button.owl-next:hover, button.owl-prev:hover{
 		}
 		&_image{
 			max-width: 400px;
+      text-align: center;
 			.button_mob{
 				display: none;
 			}
@@ -1165,18 +1182,16 @@ button.owl-next:hover, button.owl-prev:hover{
 	.button_desc{
 		display: none;
 	}
-	.button_mob{
-		display: block;
-		width: 300px;
-		margin: 0 auto;
-		margin-top: 30px;
-	}
 	.advantages{
 		text-align: center;
+    &-block{
+      margin-right: 0;
+      margin: 0 30px;
+    }
 		&-menu{
 			display: none;
 		}
-		.owl-carousel{
+		.slick-slider{
 			display: block;
 		}
 	}
@@ -1196,8 +1211,13 @@ button.owl-next:hover, button.owl-prev:hover{
 			}
 			&_image{
 				padding: 0 20px 20px;
+        .button_mob{
+          display: block;
+          margin-top: 30px;
+        }
 				img{
 					width: 100% !important;
+          max-width: 100%;
 				}
 			}
 		}
@@ -1498,18 +1518,16 @@ button.owl-next:hover, button.owl-prev:hover{
 	.button_desc{
 		display: none;
 	}
-	.button_mob{
-		display: block;
-		width: 300px;
-		margin: 0 auto;
-		margin-top: 30px;
-	}
 	.advantages{
 		text-align: center;
+    &-block{
+      margin-right: 0;
+      margin: 0 30px;
+    }
 		&-menu{
 			display: none;
 		}
-		.owl-carousel{
+		.slick-slider{
 			display: block;
 		}
 	}
@@ -1529,8 +1547,13 @@ button.owl-next:hover, button.owl-prev:hover{
 			}
 			&_image{
 				padding: 0 20px 20px;
+        .button_mob{
+          display: block;
+          margin-top: 30px;
+        }
 				img{
 					width: 100% !important;
+          max-width: 100%;
 				}
 			}
 		}
@@ -1820,6 +1843,10 @@ button.owl-next:hover, button.owl-prev:hover{
 	.advantages{
 		text-align: center;
 		padding-bottom: 90px;
+    &-block{
+      margin-right: 0;
+      margin: 0 30px;
+    }
 		&-menu{
 			display: none;
 		}
@@ -1847,6 +1874,7 @@ button.owl-next:hover, button.owl-prev:hover{
 				}
 				img{
 					width: 100% !important;
+          max-width: 100%;
 				}
 			}
 		}
@@ -2131,6 +2159,9 @@ button.owl-next:hover, button.owl-prev:hover{
 		}
 	}
 	.advantages{
+    .slick-slider{
+      display: none;
+    }
 		&-slider{
 			button.owl-prev{
 				left: -5px;
@@ -2327,6 +2358,9 @@ button.owl-next:hover, button.owl-prev:hover{
 	}
 }
 @media (min-width : 769px) and (max-width : 992px) {
+  .slick-slider{
+    display: none;
+  }
 	.header{
 		&-menu{
 			&-logo{
@@ -2500,6 +2534,9 @@ button.owl-next:hover, button.owl-prev:hover{
 	}
 }
 @media (min-width: 993px) and (max-width : 1200px) {
+  .slick-slider{
+    display: none;
+  }
 	.header{
 		&-main{
 			&-image{
@@ -2580,6 +2617,9 @@ button.owl-next:hover, button.owl-prev:hover{
 	}
 }
 @media (min-width: 1201px) and (max-width: 1440px){
+  .slick-slider{
+    display: none;
+  }
 	.header{
 		&-main{
 			&-image{
@@ -2632,6 +2672,9 @@ button.owl-next:hover, button.owl-prev:hover{
 	}
 }
 @media (min-width: 1441px) and (max-width: 3840px){
+  .slick-slider{
+    display: none;
+  }
 	html{
 		font-size: calc(30px + 15 * ((100vw - 2560px) / 4096));
 	}

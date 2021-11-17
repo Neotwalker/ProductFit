@@ -11,79 +11,22 @@ $(document).ready(function () {
 	});
 	
 	if ($(window).innerWidth() <= 560) {
-		var sync1 = $("#sync1");
-		var sync2 = $("#sync2");
-		var syncedSecondary = true;
-    var slidesPerPage = 1;
-
-		sync1.owlCarousel({
-			items: 1,
-			slideSpeed: 2000,
-			nav: true,
-			autoplay: false,
-			dots: false,
-			loop: false,
-			responsiveRefreshRate: 200,
-			navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
-			'<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>'],
-		}).on('changed.owl.carousel', syncPosition);
-
-		sync2
-			.on('initialized.owl.carousel', function () {
-				sync2.find(".owl-item").eq(0).addClass("current");
-			})
-			.owlCarousel({
-				items: slidesPerPage,
-        slideSpeed: 2000,
-				dots: false,
-        nav: false,
-        slideBy: slidesPerPage,
-				responsiveRefreshRate: 200,
-			}).on('changed.owl.carousel', syncPosition2);
-
-		function syncPosition(el) {
-      var current = el.item.index;
-			// var count = el.item.count - 1;
-			// var current = Math.round(el.item.index - (el.item.count / 2) - .5);
-
-			// if (current < 0) {
-			// 	current = count;
-			// }
-			// if (current > count) {
-			// 	current = 0;
-			// }
-
-			//end block
-
-			sync2
-				.find(".owl-item")
-				.removeClass("current")
-				.eq(current)
-				.addClass("current");
-			var onscreen = sync2.find('.owl-item.active').length - 1;
-			var start = sync2.find('.owl-item.active').first().index();
-			var end = sync2.find('.owl-item.active').last().index();
-
-			if (current > end) {
-				sync2.data('owl.carousel').to(current, 100, true);
-			}
-			if (current < start) {
-				sync2.data('owl.carousel').to(current - onscreen, 100, true);
-			}
-		}
-
-		function syncPosition2(el) {
-			if (syncedSecondary) {
-				var number = el.item.index;
-				sync1.data('owl.carousel').to(number, 100, true);
-			}
-		}
-
-		sync2.on("click", ".owl-item", function (e) {
-			var number = $(this).index();
-			sync1.data('owl.carousel').to(number, 300, true);
-		});
-	}
+    $('#sync1').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      asNavFor: '#sync2',
+      prevArrow: '<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
+			nextArrow: '<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>',
+    });
+    $('#sync2').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '#sync1',
+      dots: false,
+      arrows: false,
+    });
+  }
 	var companies = $('.header-companies-slider');
 	companies.owlCarousel({
 		nav: true,
