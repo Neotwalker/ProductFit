@@ -154,7 +154,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	&-hidden{
 		position: static;
 		visibility: hidden;
-		height: 20vh;
+		height: 15vh;
 	}
 	&-menu{
 		position: fixed;
@@ -1493,7 +1493,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 		&-case{
-			height: 45vh;
 			button.owl-prev, button.owl-next {
 				position: absolute;
 				top: auto;
@@ -2353,6 +2352,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-info{
 			&-text{
 				padding: 0 20px;
+			}
+		}
+    &_list{
+			&_item{
+				width: 100%;
+				&_caption{
+					-webkit-transform: translate3d(0,0,0);
+    			transform: translate3d(0,0,0);
+					&-desc{
+						margin: 0;
+						padding-bottom: 10px;
+					}
+				}
 			}
 		}
 	}
