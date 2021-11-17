@@ -14,6 +14,7 @@ $(document).ready(function () {
 		var sync1 = $("#sync1");
 		var sync2 = $("#sync2");
 		var syncedSecondary = true;
+    var slidesPerPage = 1;
 
 		sync1.owlCarousel({
 			items: 1,
@@ -21,7 +22,7 @@ $(document).ready(function () {
 			nav: true,
 			autoplay: false,
 			dots: false,
-			loop: true,
+			loop: false,
 			responsiveRefreshRate: 200,
 			navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
 			'<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>'],
@@ -32,23 +33,25 @@ $(document).ready(function () {
 				sync2.find(".owl-item").eq(0).addClass("current");
 			})
 			.owlCarousel({
-				items: 1,
+				items: slidesPerPage,
         slideSpeed: 2000,
 				dots: false,
-				nav: false,
-				responsiveRefreshRate: 200
+        nav: false,
+        slideBy: slidesPerPage,
+				responsiveRefreshRate: 200,
 			}).on('changed.owl.carousel', syncPosition2);
 
 		function syncPosition(el) {
-			var count = el.item.count - 1;
-			var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+      var current = el.item.index;
+			// var count = el.item.count - 1;
+			// var current = Math.round(el.item.index - (el.item.count / 2) - .5);
 
-			if (current < 0) {
-				current = count;
-			}
-			if (current > count) {
-				current = 0;
-			}
+			// if (current < 0) {
+			// 	current = count;
+			// }
+			// if (current > count) {
+			// 	current = 0;
+			// }
 
 			//end block
 
