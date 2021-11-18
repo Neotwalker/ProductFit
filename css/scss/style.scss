@@ -148,12 +148,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     transform: translateY(0);
   }
 }
-
+.full-width{
+  height: 100vh;
+}
 .header{
 	background-color: $color-main;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 	&-hidden{
 		position: static;
 		visibility: hidden;
@@ -2739,6 +2740,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     font-weight: normal;
 	}
   .products{
+    &_list{
+      &_item{
+        &_gallery{
+          &_img{
+            img{
+              width: 60%;
+              min-height: 190px;
+              margin: 20px auto;
+            }
+          }
+        }
+      }
+    }
     &-info{
       &-text{
         line-height: 30px;
@@ -2746,7 +2760,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     }
   }
 	.header{
-    height: 100vh;
     &-menu, &-hidden{
       // height: 17vh;
     }

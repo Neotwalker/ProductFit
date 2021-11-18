@@ -182,11 +182,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
 }
 
+.full-width {
+  height: 100vh;
+}
+
 .header {
   background-color: #F8FFFF;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .header-hidden {
@@ -2696,11 +2699,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     letter-spacing: 1px;
     font-weight: normal;
   }
+  .products_list_item_gallery_img img {
+    width: 60%;
+    min-height: 190px;
+    margin: 20px auto;
+  }
   .products-info-text {
     line-height: 30px;
-  }
-  .header {
-    height: 100vh;
   }
   .header-main {
     justify-content: space-around;
