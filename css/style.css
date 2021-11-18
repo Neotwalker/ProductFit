@@ -1248,7 +1248,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .products_list_item_gallery {
   position: relative;
   background-color: #c7ceda;
-  height: 300px;
 }
 
 .products_list_item_gallery.style1 {
@@ -2705,7 +2704,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     font-weight: normal;
   }
   .products_list_item_gallery_img img {
-    width: 60%;
+    width: 55%;
     min-height: 190px;
     margin: 20px auto;
   }
