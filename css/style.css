@@ -2821,7 +2821,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .services-list-item_headertext {
     padding-top: 200px;
-    min-height: 60px;
+    min-height: 80px;
   }
 }
 
