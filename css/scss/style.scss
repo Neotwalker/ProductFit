@@ -319,7 +319,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 .advantages{
 	padding-top: 60px;
 	border-radius: 30px;
-	padding-bottom: 120px;
+	padding-bottom: 60px;
 	&-menu{
 		text-align: center;
 	}
@@ -470,6 +470,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 			&_text{
 				margin-bottom: 45px;
+        text-align: left;
 			}
 		}
 	}
@@ -565,14 +566,17 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				margin-bottom: 30px;
 			}
 			&_button{
-				font-weight: normal;
-				background-color: $color-main;
-				color: $color-block;
-        padding: 25px 25px;
-        font-weight: 700;
-				&:hover{
-					opacity: 0.8;
-				}
+        display: block;
+        .button{
+          font-weight: normal;
+          background-color: $color-main;
+          color: $color-block;
+          padding: 25px 25px;
+          font-weight: 700;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
 			}
 		}
 		&_image{
@@ -828,7 +832,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 }
 .cart{
 	margin-top: 70px;
-	margin-bottom: 120px;
+	margin-bottom: 70px;
 	&-wrp{
 		display: flex;
 		justify-content: space-around;
@@ -1006,7 +1010,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			&-text{
 				line-height: 26px;
 				color: $color-headers;
-				text-align: justify;
+				text-align: left;
 				margin-bottom: 25px;
 			}
 	}
@@ -1186,7 +1190,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		text-align: center;
     &-block{
       margin-right: 0;
-      margin: 0 30px;
+      margin: 0 60px;
     }
 		&-menu{
 			display: none;
@@ -1206,7 +1210,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 					text-align: center;
 				}
 				&_text{
-					padding: 0 20px;
+					padding: 0 10px;
 				}
 			}
 			&_image{
@@ -1226,7 +1230,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 	}
 	.projects{
-		margin-bottom: 90px;
+		margin-bottom: 0;
 		&-list{
 			display: block;
 			position: relative;
@@ -1252,9 +1256,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				&_headertext, &_text{
 					color: $color-headers;
 				}
+        &_headertext{
+          margin-bottom: 10px;
+        }
+        &_text{
+          margin-top: 0;
+          font-size: 16px;
+        }
 				&_button{
 					margin: 0 auto;
-					margin-top: 30px;
+					margin-top: 50px;
 				}
 			}
 			&_image{
@@ -1317,7 +1328,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			margin-right: 0;
 		}
     .button{
-      padding: 24px 25px;
+      padding: 35px 25px;
     }
 	}
 	.cart{
@@ -1521,7 +1532,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		text-align: center;
     &-block{
       margin-right: 0;
-      margin: 0 30px;
+      margin: 0 90px;
     }
 		&-menu{
 			display: none;
@@ -1587,9 +1598,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				&_headertext, &_text{
 					color: $color-headers;
 				}
+        &_headertext{
+          margin-bottom: 10px;
+        }
+        &_text{
+          margin-top: 0;
+          font-size: 16px;
+        }
 				&_button{
 					margin: 0 auto;
-					margin-top: 30px;
+					margin-top: 50px;
 				}
 			}
 			&_image{
@@ -1844,7 +1862,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		padding-bottom: 90px;
     &-block{
       margin-right: 0;
-      margin: 0 30px;
+      margin: 0 150px;
     }
 		&-menu{
 			display: none;
@@ -1908,9 +1926,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				&_headertext, &_text{
 					color: $color-headers;
 				}
+        &_headertext{
+          margin-bottom: 10px;
+        }
+        &_text{
+          margin-top: 0;
+          font-size: 16px;
+        }
 				&_button{
 					margin: 0 auto;
-					margin-top: 30px;
+					margin-top: 50px;
 				}
 			}
 			&_image{
@@ -2234,9 +2259,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				&_headertext, &_text{
 					color: $color-headers;
 				}
+        &_headertext{
+          margin-bottom: 10px;
+        }
+        &_text{
+          font-size: 16px;
+          margin-top: 0;
+        }
 				&_button{
 					margin: 0 auto;
-					margin-top: 30px;
+					margin-top: 50px;
 				}
 			}
 			&_mob{

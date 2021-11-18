@@ -386,7 +386,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .advantages {
   padding-top: 60px;
   border-radius: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .advantages-menu {
@@ -554,6 +554,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 
 .advantage-block_info_text {
   margin-bottom: 45px;
+  text-align: left;
 }
 
 .advantage-block.block-active {
@@ -677,6 +678,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 }
 
 .projects-case_block_button {
+  display: block;
+}
+
+.projects-case_block_button .button {
   font-weight: normal;
   background-color: #F8FFFF;
   color: #1E959B;
@@ -684,7 +689,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   font-weight: 700;
 }
 
-.projects-case_block_button:hover {
+.projects-case_block_button .button:hover {
   opacity: 0.8;
 }
 
@@ -976,7 +981,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 
 .cart {
   margin-top: 70px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 .cart-wrp {
@@ -1182,7 +1187,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .products-info-text {
   line-height: 26px;
   color: #1E959B;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 25px;
 }
 
@@ -1365,7 +1370,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantages-block {
     margin-right: 0;
-    margin: 0 30px;
+    margin: 0 60px;
   }
   .advantages-menu {
     display: none;
@@ -1383,7 +1388,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     text-align: center;
   }
   .advantage-block_info_text {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .advantage-block_image {
     padding: 0 20px 20px;
@@ -1400,7 +1405,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     display: none;
   }
   .projects {
-    margin-bottom: 90px;
+    margin-bottom: 0;
   }
   .projects-list {
     display: block;
@@ -1429,9 +1434,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .projects-case_block_headertext, .projects-case_block_text {
     color: #1E959B;
   }
+  .projects-case_block_headertext {
+    margin-bottom: 10px;
+  }
+  .projects-case_block_text {
+    margin-top: 0;
+    font-size: 16px;
+  }
   .projects-case_block_button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .projects-case_image {
     display: none;
@@ -1482,7 +1494,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     margin-right: 0;
   }
   .submit .button {
-    padding: 24px 25px;
+    padding: 35px 25px;
   }
   .cart {
     margin-top: 120px;
@@ -1665,7 +1677,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantages-block {
     margin-right: 0;
-    margin: 0 30px;
+    margin: 0 90px;
   }
   .advantages-menu {
     display: none;
@@ -1729,9 +1741,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .projects-case_block_headertext, .projects-case_block_text {
     color: #1E959B;
   }
+  .projects-case_block_headertext {
+    margin-bottom: 10px;
+  }
+  .projects-case_block_text {
+    margin-top: 0;
+    font-size: 16px;
+  }
   .projects-case_block_button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .projects-case_image {
     display: none;
@@ -1959,7 +1978,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantages-block {
     margin-right: 0;
-    margin: 0 30px;
+    margin: 0 150px;
   }
   .advantages-menu {
     display: none;
@@ -2021,9 +2040,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .projects-case_block_headertext, .projects-case_block_text {
     color: #1E959B;
   }
+  .projects-case_block_headertext {
+    margin-bottom: 10px;
+  }
+  .projects-case_block_text {
+    margin-top: 0;
+    font-size: 16px;
+  }
   .projects-case_block_button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .projects-case_image {
     display: none;
@@ -2296,9 +2322,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .projects-case_block_headertext, .projects-case_block_text {
     color: #1E959B;
   }
+  .projects-case_block_headertext {
+    margin-bottom: 10px;
+  }
+  .projects-case_block_text {
+    font-size: 16px;
+    margin-top: 0;
+  }
   .projects-case_block_button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .projects-case_mob {
     display: block;
