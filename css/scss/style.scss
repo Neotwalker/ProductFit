@@ -151,6 +151,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 
 .header{
 	background-color: $color-main;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 	&-hidden{
 		position: static;
@@ -231,6 +233,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     // }
 	}
   &-companies{
+    flex-grow: 1;
     display: flex;
     align-items: center;
     background-color: $color-block;
@@ -1141,13 +1144,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			flex-wrap: wrap;
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
-			background-size: 95%;
+			background-size: 80%;
 			background-position: 0 100%;
 			&-info{
 				margin-top: 0;
 				&-headtext{
 					text-align: center;
-					padding: 0 20px;
+					padding: 15px 20px 0;
 				}
 				&-text{
 					margin-left: 23px;
