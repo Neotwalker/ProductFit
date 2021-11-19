@@ -2801,10 +2801,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       height: 20vh;
     }
     &-case{
-      height: 80vh;
 			.owl-item img{
 				width: 40% !important;
 			}
+      button.owl-dot{
+        margin-right: 150px;
+      }
 		}
 	}
 	.advantages{

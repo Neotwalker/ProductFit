@@ -2748,11 +2748,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-companies {
     height: 20vh;
   }
-  .header-case {
-    height: 80vh;
-  }
   .header-case .owl-item img {
     width: 40% !important;
+  }
+  .header-case button.owl-dot {
+    margin-right: 150px;
   }
   .advantages-block {
     width: 15%;
