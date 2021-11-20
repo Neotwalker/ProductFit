@@ -2752,7 +2752,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 40% !important;
   }
   .header-case button.owl-dot {
-    margin-right: 150px;
+    margin-right: 10%;
+  }
+  .header-case button.owl-prev {
+    left: 25%;
+  }
+  .header-case button.owl-next {
+    right: 25%;
   }
   .advantages-block {
     width: 15%;
