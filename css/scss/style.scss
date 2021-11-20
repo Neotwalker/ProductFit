@@ -2954,6 +2954,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-main{
 			&-image{
         max-width: 35%;
+        padding-top: 50px;
+        box-sizing: border-box;
 				img{
 					width: 100%;
 				}

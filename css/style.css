@@ -2903,6 +2903,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 @media screen and (orientation: landscape) {
   .header-main-image {
     max-width: 35%;
+    padding-top: 50px;
+    box-sizing: border-box;
   }
   .header-main-image img {
     width: 100%;
