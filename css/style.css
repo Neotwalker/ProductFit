@@ -105,6 +105,8 @@ ul, li {
 
 .telegram-svg, .mail-svg, .phone-svg {
   fill: #1E959B;
+  width: 60px;
+  height: 60px;
 }
 
 .phone {
@@ -2748,19 +2750,30 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .slick-slider {
     display: none;
   }
+  .telegram {
+    font-size: 40px;
+  }
   .container {
     max-width: 100%;
     width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-size: 50px;
+    font-size: 60px;
   }
   p, a {
     font-size: 30px;
     line-height: 33px;
   }
+  p {
+    font-size: 38px;
+    line-height: 40px;
+  }
   ul, li {
     font-size: 24px;
+  }
+  .telegram-svg, .mail-svg, .phone-svg {
+    width: 100px;
+    height: 100px;
   }
   .button {
     letter-spacing: 1px;
@@ -2780,6 +2793,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     font-size: 24px;
     padding: 45px 25px;
     line-height: 0;
+  }
+  .header-menu-list-item, .header-hidden-list-item {
+    font-size: 40px;
   }
   .header-main {
     margin-right: 4.5rem;
