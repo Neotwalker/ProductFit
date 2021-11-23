@@ -69,7 +69,6 @@ p, a{
 	text-decoration: none;
 	@include adaptiv-font(14, 14);
 	color: $color-text;
-	line-height: 17px;
 }
 ul, li{
 	font-family: 'gilroy-normal', sans-serif;
@@ -2768,26 +2767,47 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  
 }
 @media (min-width: 1441px) and (max-width: 1921px){
-  h1, h2, h3, h4, h5, h6{
-    font-size: 45px;
+  .slick-slider{
+    display: none;
   }
   p,a{
     font-size: 24px;
-    line-height: 24px;
   }
+  .phone-svg{
+    width: 20px;
+  }
+  .container-hd{
+    display: block;
+		max-width: 1440px !important;
+    margin: 0 auto !important;
+	}
   .container{
     margin: 0;
     max-width: 100%;
     width: 100%;
   }
   .header{
+    &-menu{
+      &-logo{
+        font-size: 24px;
+        margin-left: 5rem;
+      }
+    }
     &-main{
-      margin-left: 10rem;
-      margin-right: 10rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
       &-info{
         max-width: 60%;
+        &-headtext{
+          font-size: 45px;
+        }
+        &-text{
+          font-size: 24px;
+          line-height: 24px;
+        }
       }
       &-image{
         max-width: 100% !important;
@@ -2798,6 +2818,103 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
     }
   }
+  .projects{
+		&-list{
+			&-item{
+				max-width: 30%;
+				margin-right: 40px;
+        min-height: 450px;
+        &_header{
+          @include adaptiv-font(20, 18);
+        }
+        &_img{
+          width: 70%;
+          height: 250px;
+          object-fit: contain;
+        }
+				&:nth-child(3), &:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		&-button{
+			max-width: 300px;
+		}
+		&-case{
+      position: relative;
+      min-height: 450px;
+			&_block{
+        margin-left: 7rem;
+				&_button{
+					max-width: 80%;
+				}
+			}
+      .owl-item img{
+        width: 40% !important;
+      }
+		}
+	}
+  .products{
+    &_list{
+      &_item{
+        &_gallery{
+          height: 300px;
+          &_img{
+            img{
+              width: 55%;
+              min-height: 190px;
+              margin: 20px auto;
+            }
+          }
+        }
+      }
+    }
+    &-info{
+      &-text{
+        line-height: 30px;
+      }
+    }
+  }
+  .footer-desctop{
+		&_menu{
+      justify-content: space-between;
+      margin-left: 4rem;
+			&_logo{
+        font-size: 24px;
+			}
+      &_wrp{
+        &_block{
+          &_1{
+            a{
+              margin-bottom: 36px;
+            }
+          }
+        }
+      }
+		}
+	}
+  .advantages{
+		&-block{
+			width: 15%;
+			margin-right: 20px;
+      &-text{
+        font-size: 18px;
+      }
+			&-img{
+				width: 40%;
+			}
+		}
+	}
+	.advantage{
+		&-block{
+			&_image{
+				max-width: 30%;
+			}
+			&_info{
+				max-width: 30%;
+			}
+		}
+	}
 }
 @media (min-width: 1922px) and (max-width: 3840px){
   .slick-slider{
@@ -2810,23 +2927,21 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		max-width: 100%;
     width: 100%;
 	}
-  h1, h2, h3, h4, h5, h6{
-    font-size: 60px;
-  }
-	p, a{
-		font-size: 40px;
-		line-height: 43px;
+  .container-hd{
+    display: block;
+		max-width: 1920px;
+    margin: 0 auto;
 	}
-  p{
-    font-size: 44px;
-    line-height: 46px;
-  }
   .phone{
     font-size: 40px;
     line-height: 40px;
   }
   ul,li{
     font-size: 24px;
+  }
+  p{
+   font-size: 24px;
+   line-height: 24px; 
   }
   .telegram, .mail, .phone{
     &-svg{
@@ -2838,12 +2953,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		letter-spacing: 1px;
     font-weight: normal;
     font-size: 22px;
-    padding: 40px 25px;
+    padding: 30px 25px;
 	}
   .products{
     &_list{
       &_item{
         &_gallery{
+          height: 300px;
           &_img{
             img{
               width: 55%;
@@ -2875,8 +2991,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         }
       }
       &-logo{
-        margin-right: 4rem;
         margin-left: 4rem;
+        font-size: 24px;
       }
     }
 		&-main{
@@ -2885,6 +3001,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       margin-left: 4.5rem;
 			&-info{
 				max-width: 60%;
+        &-headtext{
+          font-size: 60px;
+        }
+        &-text{
+          font-size: 44px;
+          line-height: 46px;
+        }
 			}
 			&-image{
 				max-width: 50%;
@@ -2948,6 +3071,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 		&-button{
 			max-width: 300px;
+      font-size: 24px;
 		}
 		&-case{
       position: relative;
@@ -2956,6 +3080,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         margin-left: 5rem;
 				&_button{
 					max-width: 80%;
+          .button{
+            padding: 40px 15px;
+            display: block;
+          }
 				}
 			}
       .owl-item img{
@@ -3039,6 +3167,43 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
     }
   }
+  .footer-desctop{
+		&_menu{
+      justify-content: space-between;
+      margin-left: 4rem;
+			&_logo{
+        font-size: 24px;
+			}
+      &_wrp{
+        &_block{
+          &_1{
+            a{
+              margin-bottom: 53px;
+              font-size: 24px;
+            }
+          }
+          &_2{
+            a{
+              font-size: 24px;
+              svg{
+                width: 35px;
+              }
+            }
+          }
+        }
+      }
+      &_list{
+        &_item{
+          a{
+            svg{
+              width: 50%;
+            }
+          }
+        }
+        
+      }
+		}
+	}
 }
 @media (min-width: 3840px) {
   .container{
@@ -3085,7 +3250,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .header{
 		&-main{
 			&-image{
-        max-width: 45%;
+        max-width: 60%;
         height: 100%;
         padding-top: 20px;
         box-sizing: border-box;
