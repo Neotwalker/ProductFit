@@ -221,6 +221,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   line-height: 18px;
   padding: 23px 40px;
   height: 65px;
+  font-size: 16px;
+  letter-spacing: 0;
 }
 
 .header-menu-logo {
@@ -253,10 +255,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 
 .header-main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 55px;
   height: 60vh;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .header-main-info {
@@ -356,11 +360,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 }
 
 .header-case button.owl-prev {
-  left: 415px;
+  left: 25%;
 }
 
 .header-case button.owl-next {
-  right: 415px;
+  right: 25%;
 }
 
 .header-case button.owl-prev i, .header-case button.owl-next i {
@@ -2245,12 +2249,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     display: none;
   }
   .header-main {
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     background-image: url("../img/header_picture.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 80%;
+    background-size: 60%;
+    margin: 0;
   }
   .header-main-info {
     max-width: 500px;
@@ -2485,6 +2491,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-menu .wrapper {
     display: none;
   }
+  .header-main-image {
+    display: flex;
+    height: 100% !important;
+    align-items: center;
+  }
   .header-main-image img {
     max-width: 500px;
   }
@@ -2620,11 +2631,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .slick-slider {
     display: none;
   }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
   .header-menu-logo {
     margin-left: 2.5rem;
   }
   .header-menu-list-item:last-child {
     padding-right: 2rem;
+  }
+  .header-main {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
   }
   .header-case .owl-item img {
     width: 60% !important;
@@ -2681,6 +2700,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .slick-slider {
     display: none;
   }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .header-main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   .header-main-image img {
     width: 100%;
   }
@@ -2723,15 +2750,24 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     font-size: calc(30px + 15 * ((100vw - 2560px) / 4096));
   }
   .container {
-    max-width: 2560px;
+    max-width: 100%;
+    width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 54px;
   }
   p, a {
-    font-size: calc(20px + 14 * ((100vw - 2560px) / 4096));
+    font-size: 24px;
     line-height: 25px;
+  }
+  ul, li {
+    font-size: 24px;
   }
   .button {
     letter-spacing: 1px;
     font-weight: normal;
+    font-size: 24px;
+    padding: 40px 25px;
   }
   .products_list_item_gallery_img img {
     width: 55%;
@@ -2740,9 +2776,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .products-info-text {
     line-height: 30px;
-  }
-  .header-main {
-    justify-content: space-around;
   }
   .header-main-info {
     max-width: 60%;
@@ -2814,7 +2847,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     min-height: 450px;
   }
   .projects-case_block {
-    margin-left: 4.5rem;
+    margin-left: 5rem;
   }
   .projects-case_block_button {
     max-width: 80%;
@@ -2902,12 +2935,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 
 @media screen and (orientation: landscape) {
   .header-main-image {
-    max-width: 35%;
-    padding-top: 50px;
+    max-width: 45%;
+    height: 90% !important;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
   }
   .header-main-image img {
     width: 100%;
+    height: 85%;
   }
   .header-case .owl-item img {
     width: 40% !important;
