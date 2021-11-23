@@ -2959,9 +2959,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     line-height: 44px;
   }
   .button {
-    font-size: 40px;
-    line-height: 40px;
-    padding: 60px 70px;
+    font-size: 60px;
+    line-height: 62px;
+    padding: 80px 70px;
+  }
+  .header-main-info-headtext {
+    font-size: 100px;
+  }
+  .header-main-info-text {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
