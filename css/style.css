@@ -2761,11 +2761,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     font-size: 60px;
   }
   p, a {
-    font-size: 30px;
-    line-height: 33px;
+    font-size: 40px;
+    line-height: 43px;
   }
   p {
-    font-size: 38px;
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .phone {
+    font-size: 40px;
     line-height: 40px;
   }
   ul, li {
