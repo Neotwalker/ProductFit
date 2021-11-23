@@ -1136,7 +1136,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		font-size: calc(24px + (8 + 8 * 0.7) * ((100vw - 320px) / 1440));
 	}
 }
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width: 360px) {
 	.wrapper{
 		display: none;
 	}
@@ -1151,6 +1151,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 		&-main{
+      margin: 0;
 			align-items: baseline;
 			flex-wrap: wrap;
 			background-image: url('../img/header_picture.png');
@@ -1502,6 +1503,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			background-repeat: no-repeat;
 			background-position: 160% 136%;
 			background-size: 105%;
+      margin: 0;
 			&-info{
 				margin-top: 0;
 				&-headtext{
@@ -2154,7 +2156,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
 			background-position: bottom center;
-			background-size: 60%;
+			background-size: 57%;
       margin: 0;
 			&-info{
 				max-width: 500px;
@@ -2978,7 +2980,29 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     }
   }
 }
-
+@media (min-width: 3840px) {
+  .container{
+    max-width: 100%;
+    width: 100%;
+  }
+  .header{
+    &-main{
+      margin-right: 2rem;
+      margin-left: 2rem;
+      &-info{
+        max-width: 60%;
+      }
+    }
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-size: 54px;
+    
+  }
+  p, a{
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 @media screen and (orientation: landscape) {
   .header{
 		&-main{

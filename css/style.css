@@ -1339,6 +1339,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     margin-left: 0;
   }
   .header-main {
+    margin: 0;
     align-items: baseline;
     flex-wrap: wrap;
     background-image: url("../img/header_picture.png");
@@ -1659,6 +1660,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     background-repeat: no-repeat;
     background-position: 160% 136%;
     background-size: 105%;
+    margin: 0;
   }
   .header-main-info {
     margin-top: 0;
@@ -2255,7 +2257,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     background-image: url("../img/header_picture.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 60%;
+    background-size: 57%;
     margin: 0;
   }
   .header-main-info {
@@ -2930,6 +2932,27 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     font-family: 'gilroy-normal', sans-serif;
     color: #3C3C3C;
     opacity: 0.7;
+  }
+}
+
+@media (min-width: 3840px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .header-main {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .header-main-info {
+    max-width: 60%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 54px;
+  }
+  p, a {
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
