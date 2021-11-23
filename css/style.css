@@ -2779,6 +2779,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .products-info-text {
     line-height: 30px;
   }
+  .header-main {
+    margin-right: 4.5rem;
+    margin-left: 4.5rem;
+  }
   .header-main-info {
     max-width: 60%;
   }
@@ -2941,8 +2945,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 100%;
   }
   .header-main {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
   .header-main-info {
     max-width: 60%;
@@ -2952,7 +2956,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   p, a {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 44px;
   }
   .button {
     font-size: 40px;

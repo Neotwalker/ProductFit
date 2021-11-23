@@ -2823,6 +2823,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     }
 		&-main{
       // height: 60vh;
+      margin-right: 4.5rem;
+      margin-left: 4.5rem;
 			&-info{
 				max-width: 60%;
 			}
@@ -2987,8 +2989,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   }
   .header{
     &-main{
-      margin-right: 2rem;
-      margin-left: 2rem;
+      margin-right: 5rem;
+      margin-left: 5rem;
       &-info{
         max-width: 60%;
       }
@@ -3000,7 +3002,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   }
   p, a{
     font-size: 40px;
-    line-height: 40px;
+    line-height: 44px;
   }
   .button{
     font-size: 40px;
