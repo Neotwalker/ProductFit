@@ -2774,19 +2774,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .slick-slider{
     display: none;
   }
-	html{
-		font-size: calc(30px + 15 * ((100vw - 2560px) / 4096));
-	}
 	.container{
 		max-width: 100%;
     width: 100%;
 	}
   h1, h2, h3, h4, h5, h6{
-    font-size: 36px;
+    font-size: 50px;
   }
 	p, a{
-		font-size: 20px;
-		line-height: 22px;
+		font-size: 30px;
+		line-height: 33px;
 	}
   ul,li{
     font-size: 24px;
@@ -2819,7 +2816,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   }
 	.header{
     &-menu, &-hidden{
-      // height: 17vh;
+      .wrapper{
+        .button{
+          font-size: 24px;
+          padding: 45px 25px;
+          line-height: 0;
+        }
+      }
     }
 		&-main{
       // height: 60vh;
