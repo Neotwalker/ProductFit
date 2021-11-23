@@ -2871,8 +2871,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_image {
     max-width: 30%;
   }
+  .advantage-block_image img {
+    min-height: 400px;
+    padding-top: 20px;
+  }
   .advantage-block_info {
     max-width: 30%;
+    padding-top: 20px;
   }
 }
 
@@ -3132,6 +3137,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .container {
     max-width: 100%;
     width: 100%;
+  }
+  .telegram-svg, .mail-svg, .phone-svg {
+    width: 100px;
+    height: 100px;
   }
   .header-main {
     margin-right: 7rem;

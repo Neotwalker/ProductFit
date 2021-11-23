@@ -2916,9 +2916,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-block{
 			&_image{
 				max-width: 30%;
+        img{
+          min-height: 400px;
+          padding-top: 20px;
+        }
 			}
 			&_info{
 				max-width: 30%;
+        padding-top: 20px;
 			}
 		}
 	}
@@ -3216,6 +3221,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .container{
     max-width: 100%;
     width: 100%;
+  }
+  .telegram, .mail, .phone{
+    &-svg{
+      width: 100px;
+      height: 100px;
+    }
   }
   .header{
     &-main{
