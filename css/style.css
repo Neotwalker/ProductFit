@@ -15,10 +15,6 @@
   font-style: normal;
 }
 
-html {
-  font-size: calc(14px + 10 * ((100vw - 320px) / 1440));
-}
-
 body, html {
   background-color: #F8FFFF;
   margin: 0;
@@ -2746,7 +2742,27 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) {
+@media (min-width: 1441px) and (max-width: 1921px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 45px;
+  }
+  p, a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .header-main-info {
+    max-width: 60%;
+  }
+  .header-main-image {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .header-main-image img {
+    height: 90%;
+  }
+}
+
+@media (min-width: 1922px) and (max-width: 3840px) {
   .slick-slider {
     display: none;
   }
@@ -2850,19 +2866,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) and (max-width: 767px) {
+@media (min-width: 1922px) and (max-width: 3840px) and (max-width: 767px) {
   .projects-list-item_header {
     font-size: calc(18px + 3.4 * ((100vw - 320px) / 1440));
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) and (min-width: 767px) {
+@media (min-width: 1922px) and (max-width: 3840px) and (min-width: 767px) {
   .projects-list-item_header {
     font-size: calc(20px + 2 * (100vw / 1440));
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) {
+@media (min-width: 1922px) and (max-width: 3840px) {
   .projects-list-item_img {
     width: 70%;
     height: 250px;
@@ -2921,19 +2937,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) and (max-width: 767px) {
+@media (min-width: 1922px) and (max-width: 3840px) and (max-width: 767px) {
   .services-list-item_headertext {
     font-size: calc(16px + 13.6 * ((100vw - 320px) / 1440));
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) and (min-width: 767px) {
+@media (min-width: 1922px) and (max-width: 3840px) and (min-width: 767px) {
   .services-list-item_headertext {
     font-size: calc(24px + 8 * (100vw / 1440));
   }
 }
 
-@media (min-width: 1441px) and (max-width: 3840px) {
+@media (min-width: 1922px) and (max-width: 3840px) {
   .services-list-decoration {
     height: 180px;
     top: 285px;
