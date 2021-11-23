@@ -2756,11 +2756,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-size: 54px;
+    font-size: 40px;
   }
   p, a {
-    font-size: 24px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 22px;
   }
   ul, li {
     font-size: 24px;
@@ -2945,8 +2945,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 100%;
   }
   .header-main {
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
   }
   .header-main-info {
     max-width: 60%;
