@@ -2820,7 +2820,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .header-menu .wrapper .button, .header-hidden .wrapper .button {
     font-size: 24px;
-    padding: 45px 25px;
+    padding: 50px 20px;
     line-height: 0;
   }
   .header-menu-list-item, .header-hidden-list-item {
