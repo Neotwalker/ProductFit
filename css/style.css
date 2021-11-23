@@ -545,7 +545,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 }
 
 .advantage-block_image {
-  max-width: 400px;
+  max-width: 50%;
   text-align: center;
 }
 
@@ -556,7 +556,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .advantage-block_image img {
   max-width: 80%;
   padding-top: 25px;
-  min-height: 350px;
+  min-height: 500px;
 }
 
 .advantage-block_info {

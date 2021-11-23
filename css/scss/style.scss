@@ -462,7 +462,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			align-items: center;
 		}
 		&_image{
-			max-width: 400px;
+			max-width: 50%;
       text-align: center;
 			.button_mob{
 				display: none;
@@ -470,7 +470,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			img{
 				max-width: 80%;
 				padding-top: 25px;
-        min-height: 350px;
+        min-height: 500px;
 			}
 		}
 		&_info{
