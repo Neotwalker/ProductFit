@@ -1413,6 +1413,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantage-block_image {
     padding: 0 20px 20px;
+    max-width: 100%;
   }
   .advantage-block_image .button_mob {
     display: block;
@@ -1421,6 +1422,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_image img {
     width: 100% !important;
     max-width: 100%;
+    min-height: 300px;
   }
   .advantage-block.block-active {
     display: none;
@@ -1724,6 +1726,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantage-block_image {
     padding: 0 20px 20px;
+    max-width: 100%;
   }
   .advantage-block_image .button_mob {
     display: block;
@@ -1732,6 +1735,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_image img {
     width: 100% !important;
     max-width: 100%;
+    min-height: 300px;
   }
   .advantage-block.block-active {
     display: none;
@@ -2321,6 +2325,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     display: block;
     max-width: 400px;
     margin: 0 auto;
+  }
+  .advantage-block_image img {
+    min-height: 300px;
   }
   .banner {
     display: none;
