@@ -2801,6 +2801,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-menu-list-item, .header-hidden-list-item {
     font-size: 40px;
   }
+  .header-menu-logo, .header-hidden-logo {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
   .header-main {
     margin-right: 4.5rem;
     margin-left: 4.5rem;
