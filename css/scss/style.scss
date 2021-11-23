@@ -2777,14 +2777,21 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     font-size: 24px;
     line-height: 24px;
   }
+  .container{
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
   .header{
     &-main{
+      margin-left: 10rem;
+      margin-right: 10rem;
       &-info{
         max-width: 60%;
       }
       &-image{
         max-width: 100% !important;
-        width: 100%;
+        width: 60%;
         img{
           height: 90%;
         }
