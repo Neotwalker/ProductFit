@@ -2932,6 +2932,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .cart-wrp-left-block {
     padding-top: 220px;
   }
+  .cart-wrp-left-block_1_text {
+    height: 50px;
+    margin-bottom: 20px;
+  }
   .cart-wrp-left-block_1_info {
     font-size: 24px;
   }

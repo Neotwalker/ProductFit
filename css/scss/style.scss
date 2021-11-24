@@ -2994,6 +2994,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         &-block{
           padding-top: 220px;
           &_1{
+            &_text{
+              height: 50px;
+              margin-bottom: 20px;
+            }
             &_info{
               font-size: 24px;
             }
