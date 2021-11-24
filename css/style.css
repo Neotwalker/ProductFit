@@ -2804,7 +2804,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .header-main-image {
     max-width: 100% !important;
-    width: 80%;
+    width: 60%;
   }
   .header-main-image img {
     height: 90%;
