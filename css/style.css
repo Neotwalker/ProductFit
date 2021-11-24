@@ -536,7 +536,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .advantage-block_flex {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .advantage-block_image {
@@ -2908,7 +2907,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantage-block_info {
     max-width: 45%;
-    padding-top: 20px;
+    padding-top: 50px;
   }
   .cart-wrp-left img {
     max-width: 70%;
