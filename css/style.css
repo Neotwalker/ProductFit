@@ -1403,6 +1403,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_flex {
     flex-wrap: wrap-reverse;
   }
+  .advantage-block_info {
+    height: 100%;
+  }
   .advantage-block_info_header {
     text-align: center;
   }
@@ -1716,6 +1719,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_flex {
     flex-wrap: wrap-reverse;
   }
+  .advantage-block_info {
+    height: auto;
+  }
   .advantage-block_info_header {
     text-align: center;
   }
@@ -2022,6 +2028,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .advantage-block_flex {
     flex-wrap: wrap-reverse;
   }
+  .advantage-block_info {
+    height: auto;
+  }
   .advantage-block_info .button_desc {
     display: none;
   }
@@ -2309,6 +2318,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .advantage-block_flex {
     flex-wrap: wrap-reverse;
+  }
+  .advantage-block_info {
+    height: auto;
   }
   .advantage-block_info_header {
     text-align: center;

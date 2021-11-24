@@ -1218,6 +1218,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				flex-wrap: wrap-reverse;
 			}
 			&_info{
+        height: 100%;
 				&_header{
 					text-align: center;
 				}
@@ -1564,6 +1565,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				flex-wrap: wrap-reverse;
 			}
 			&_info{
+        height: auto;
 				&_header{
 					text-align: center;
 				}
@@ -1897,6 +1899,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				flex-wrap: wrap-reverse;
 			}
 			&_info{
+        height: auto;
 				.button_desc{
 					display: none;
 				}
@@ -2226,6 +2229,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				flex-wrap: wrap-reverse;
 			}
 			&_info{
+        height: auto;
 				&_header{
 					text-align: center;
 				}
