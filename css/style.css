@@ -2829,7 +2829,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     height: 90%;
   }
   .header-case .owl-item img {
-    width: 70% !important;
+    width: 60% !important;
   }
   .header-case button.owl-dot {
     width: 1.5em;
