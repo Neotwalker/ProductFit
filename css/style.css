@@ -2825,6 +2825,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-main-image img {
     height: 90%;
   }
+  .header-case .owl-item img {
+    width: 70% !important;
+  }
   .header-case button.owl-prev {
     left: 30%;
   }
@@ -3551,9 +3554,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-main-image img {
     width: 100%;
     height: 100%;
-  }
-  .header-case .owl-item img {
-    width: 40% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
