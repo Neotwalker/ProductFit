@@ -1507,6 +1507,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				margin-top: 0;
 				&-headtext{
 					text-align: center;
+          padding-top: 40px;
 				}
 				&-text{
 					margin-left: 23px;
@@ -2159,7 +2160,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
 			background-position: bottom center;
-			background-size: 57%;
+			background-size: 50%;
       margin: 0;
 			&-info{
 				max-width: 500px;
@@ -2728,6 +2729,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     font-size: 14px;
 	}
 	.header{
+    &-menu{
+      &-logo{
+        margin-left: 5rem;
+      }
+    }
 		&-main{
       margin-left: 5rem;
       margin-right: 5rem;

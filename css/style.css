@@ -1667,6 +1667,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .header-main-info-headtext {
     text-align: center;
+    padding-top: 40px;
   }
   .header-main-info-text {
     margin-left: 23px;
@@ -2265,7 +2266,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     background-image: url("../img/header_picture.png");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 57%;
+    background-size: 50%;
     margin: 0;
   }
   .header-main-info {
@@ -2722,6 +2723,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .button {
     font-size: 14px;
+  }
+  .header-menu-logo {
+    margin-left: 5rem;
   }
   .header-main {
     margin-left: 5rem;
