@@ -182,7 +182,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 		&-logo{
-			margin-left: 7em;
+			margin-left: 7rem;
 			&-img{
 				max-width: 15em;
 				min-height: 3.75em;
@@ -212,8 +212,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		align-items: center;
     padding-bottom: 55px;
     height: 60vh;
-    margin-left: 6rem;
-    margin-right: 6rem;
 		&-info{
 			max-width: 360px;
 			margin-top: 70px;
@@ -466,9 +464,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				display: none;
 			}
 			img{
-				max-width: 80%;
+				max-width: 100%;
 				padding-top: 25px;
-        height: 450px;
+        height: 400px;
 			}
 		}
 		&_info{
@@ -577,6 +575,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 			&_button{
         display: block;
+        margin-top: 50px;
         .button{
           font-weight: normal;
           background-color: $color-main;
@@ -1484,7 +1483,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	}
 
 }
-@media (min-width : 361px) and (max-width : 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
 	.wrapper{
 		display: none;
 	}
@@ -1500,7 +1499,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			flex-wrap: wrap;
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
-			background-position: 160% 136%;
+			background-position: 160% 120%;
 			background-size: 105%;
       margin: 0;
 			&-info{
@@ -2721,6 +2720,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		max-width: 100%;
     width: 100%;
 	}
+  .button{
+    font-size: 14px;
+	}
 	.header{
 		&-main{
       margin-left: 5rem;
@@ -2773,7 +2775,32 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
-  
+  .advantage{
+		&-block{
+			&_image{
+				max-width: 40%;
+        img{
+          height: 350px;
+          padding-top: 50px;
+        }
+			}
+			&_info{
+				max-width: 30%;
+			}
+		}
+	}
+  .cart{
+		&-wrp{
+			&-left{
+        .button{
+          max-width: 90%;
+        }
+			}
+			&-info{
+				max-width: 50%;
+			}
+		}
+	}
 }
 @media (min-width: 1441px) and (max-width: 1921px){
   .slick-slider{
@@ -2797,9 +2824,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     margin: 0 auto !important;
 	}
   .container{
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
   }
   .header{
     &-menu{
@@ -2809,8 +2835,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
     }
     &-main{
-      margin-left: 5rem;
-      margin-right: 5rem;
       &-info{
         max-width: 60%;
         &-headtext{
@@ -2823,10 +2847,18 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
       &-image{
         max-width: 100% !important;
-        width: 50%;
+        width: 80%;
         img{
           height: 90%;
         }
+      }
+    }
+    &-case{
+      button.owl-prev{
+        left: 30%;
+      }
+      button.owl-next{
+        right: 30%;
       }
     }
   }
@@ -2873,6 +2905,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
           height: 300px;
           &_img{
             img{
+              object-fit: contain;
               width: 55%;
               min-height: 190px;
               margin: 20px auto;
@@ -2904,6 +2937,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
           }
           &_2{
             a{
+              margin-bottom: 35px;
               font-size: 24px;
               svg{
                 width: 35px;
@@ -2941,8 +2975,42 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  .cart{
+		&-wrp{
+			&-left{
+        img{
+          max-width: 70%;
+        }
+        &-block{
+          padding-top: 220px;
+          &_1{
+            &_info{
+              font-size: 24px;
+            }
+          }
+        }
+        &_list{
+          &_item{
+            .cart_svg{
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+        &_link{
+          font-size: 24px;
+        }
+        .button{
+          max-width: 450px;
+        }
+			}
+			&-info{
+				max-width: 50%;
+			}
+		}
+	}
 }
-@media (min-width: 1922px) and (max-width: 3840px){
+@media (min-width: 1922px) and (max-width: 2560px){
   .wrap-hd{
     .submit{
       height: 800px;
@@ -2951,13 +3019,25 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .slick-slider{
     display: none;
   }
+  h1, h2, h3, h4, h5, h6{
+    font-size: 50px;
+  }
+  p, a{
+    font-size: 28px;
+  }
+  .button{
+    max-width: 70%;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 50px 24px;
+  }
   .telegram{
     font-size: 40px;
   }
 	.container{
-		max-width: 100%;
-    width: 100%;
-	}
+    margin: 0 auto;
+    max-width: 1920px;
+  }
   .container-hd{
     display: block;
 		max-width: 1920px;
@@ -2971,8 +3051,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     font-size: 24px;
   }
   p{
-   font-size: 24px;
-   line-height: 24px; 
+   font-size: 28px;
   }
   .telegram, .mail, .phone{
     &-svg{
@@ -2986,27 +3065,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     font-size: 22px;
     padding: 30px 25px;
 	}
-  .products{
-    &_list{
-      &_item{
-        &_gallery{
-          height: 300px;
-          &_img{
-            img{
-              width: 55%;
-              min-height: 190px;
-              margin: 20px auto;
-            }
-          }
-        }
-      }
-    }
-    &-info{
-      &-text{
-        line-height: 30px;
-      }
-    }
-  }
 	.header{
     &-menu, &-hidden{
       .wrapper{
@@ -3022,14 +3080,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         }
       }
       &-logo{
-        margin-left: 4rem;
+        margin-left: 7rem;
         font-size: 24px;
       }
     }
 		&-main{
-      // height: 60vh;
-      margin-right: 4.5rem;
-      margin-left: 4.5rem;
 			&-info{
 				max-width: 60%;
         &-headtext{
@@ -3069,15 +3124,18 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			&-img{
 				width: 40%;
 			}
+      &-text{
+        font-size: 24px;
+      }
 		}
 	}
 	.advantage{
 		&-block{
 			&_image{
-				max-width: 30%;
+				max-width: 40%;
 			}
 			&_info{
-				max-width: 30%;
+				max-width: 40%;
 			}
 		}
 	}
@@ -3108,17 +3166,25 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       position: relative;
       min-height: 450px;
 			&_block{
-        margin-left: 5rem;
+        margin-left: 7rem;
+        max-width: 600px;
 				&_button{
-					max-width: 80%;
+					max-width: 100%;
           .button{
             padding: 40px 15px;
+            max-width: 90%;
             display: block;
+            font-size: 28px;
           }
 				}
 			}
       .owl-item img{
         width: 40% !important;
+      }
+      &_image{
+        img{
+          max-width: 955px;
+        }
       }
 		}
 	}
@@ -3172,7 +3238,35 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-wrp{
 			&-left{
 				max-width: 50%;
-				width: 25%;
+				width: 40%;
+        img{
+          max-width: 400px;
+        }
+        &-block{
+          padding-top: 300px;
+          &_1{
+            &_info{
+              font-size: 36px;
+            }
+          }
+        }
+        &_list{
+          &_item{
+            .cart_svg{
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+        &_link{
+          font-size: 36px;
+        }
+        .button{
+          max-width: 90%;
+          font-size: 36px;
+          line-height: 36px;
+          padding: 50px 24px;
+        }
 			}
 			&-info{
 				max-width: 50%;
@@ -3183,9 +3277,43 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-wrp{
 			&_block{
 				max-width: 50%;
+        &_headertext{
+          font-size: 50px;
+        }
 			}
 		}
 	}
+  .products{
+    &_list{
+      &_item{
+        &_gallery{
+          height: 400px;
+          &_img{
+            img{
+              width: 80%;
+              height: 300px;
+              object-fit: contain;
+              margin: 20px auto;
+            }
+          }
+        }
+        &_caption{
+          &-name{
+            font-size: 32px;
+          }
+          &-desc{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &-info{
+      max-width: 70%;
+      &-text{
+        line-height: 36px;
+      }
+    }
+  }
   .footer-desctop{
     padding-bottom: 30px;
     &_copyright{
@@ -3236,10 +3364,26 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 	}
 }
-@media (min-width: 3840px) {
+@media (min-width: 2561px) {
+  .slick-slider{
+    display: none;
+  }
   .container{
     max-width: 100%;
     width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-size: 60px;
+  }
+  p, a{
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .button{
+    max-width: 70%;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 50px 24px;
   }
   .telegram, .mail, .phone{
     &-svg{
@@ -3253,27 +3397,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       margin-left: 7rem;
       &-info{
         max-width: 60%;
-      }
-    }
-  }
-  h1, h2, h3, h4, h5, h6{
-    font-size: 60px;
-    
-  }
-  p, a{
-    font-size: 40px;
-    line-height: 44px;
-  }
-  .button{
-    font-size: 60px;
-    line-height: 62px;
-    padding: 80px 70px;
-  }
-  .header{
-    &-main{
-      &-info{
         &-headtext{
-          font-size: 100px;
+          font-size: 90px;
         }
         &-text{
           font-size: 60px;
@@ -3291,12 +3416,276 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
     }
   }
+  .advantages{
+		&-block{
+			width: 15%;
+			margin-right: 20px;
+			&-img{
+				width: 40%;
+			}
+		}
+	}
+	.advantage{
+		&-block{
+			&_image{
+				max-width: 40%;
+        img{
+          height: 600px;
+        }
+			}
+			&_info{
+				max-width: 30%;
+        .button{
+          display: block;
+          max-width: 80%;
+        }
+			}
+		}
+	}
+	.projects{
+		&-list{
+			&-item{
+				max-width: 25%;
+				margin-right: 40px;
+        min-height: 450px;
+        &_header{
+          @include adaptiv-font(20, 18);
+        }
+        &_img{
+          width: 70%;
+          height: 250px;
+          object-fit: contain;
+        }
+				&:nth-child(3), &:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		&-button{
+			max-width: 300px;
+      font-size: 24px;
+		}
+		&-case{
+      position: relative;
+      min-height: 450px;
+			&_block{
+        margin-left: 4rem;
+        max-width: 600px;
+				&_button{
+					max-width: 100%;
+          .button{
+            padding: 40px 15px;
+            max-width: 90%;
+            display: block;
+            font-size: 28px;
+          }
+				}
+			}
+      .owl-item img{
+        width: 40% !important;
+      }
+		}
+	}
+	.banner{
+		align-items: center;
+		.container-fluid{
+			width: 100%;
+			justify-content: center;
+		}
+		&-wrp{
+		  min-height: 600px;
+      &-header{
+        width: 50%;
+        &-date{
+          font-size: 36px;
+        }
+        &-text{
+          padding-right: 30px;
+          max-width: 100%;
+        }
+      }
+			&-img{
+				max-width: 700px;
+        width: 100%;
+			}
+		}
+	}
+	.services{
+		&-list{
+			&-item{
+				width: 23%;
+				&_img{
+					&_circle{
+						width: 230px;
+						height: 230px;
+					}
+					&_svg{
+						width: 100%;
+						left: 0;
+						height: 142px;
+					}
+				}
+				&_headertext{
+					padding-top: 200px;
+					min-height: 80px;
+					@include adaptiv-font(24, 16);
+				}
+			}
+			&-decoration{
+				height: 180px;
+				top: 285px;
+			}
+			&-decoration.bottom{
+				top: 780px;
+			}
+		}
+	}
+	.cart{
+		&-wrp{
+			&-left{
+				max-width: 50%;
+				width: 40%;
+        img{
+          max-width: 400px;
+        }
+        &-block{
+          padding-top: 300px;
+          &_1{
+            &_text{
+              height: 60px;
+            }
+            &_info{
+              font-size: 36px;
+            }
+          }
+        }
+        &_list{
+          &_item{
+            .cart_svg{
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+        &_link{
+          font-size: 36px;
+        }
+        .button{
+          max-width: 70%;
+          font-size: 36px;
+          line-height: 36px;
+          padding: 50px 24px;
+        }
+			}
+			&-info{
+				max-width: 50%;
+			}
+		}
+	}
+  .products{
+    &_list{
+      &_item{
+        &_gallery{
+          height: 400px;
+          &_img{
+            img{
+              width: 80%;
+              height: 300px;
+              object-fit: contain;
+              margin: 20px auto;
+            }
+          }
+        }
+        &_caption{
+          &-name{
+            font-size: 32px;
+          }
+          &-desc{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &-info{
+      max-width: 70%;
+      &-text{
+        line-height: 36px;
+      }
+    }
+  }
+	.submit{
+		&-wrp{
+			&_block{
+				max-width: 50%;
+        &_headertext{
+          font-size: 70px;
+        }
+			}
+		}
+    .button{
+      line-height: 36px;
+      max-width: 40%;
+    }
+    &-image{
+      width: 25%;
+    }
+	}
+  .footer-desctop{
+    padding-bottom: 30px;
+    &_copyright{
+      display: none;
+      &_4k{
+        display: block;
+        font-family: 'gilroy-normal', sans-serif;
+        color: #3C3C3C;
+        opacity: 0.7;
+      }
+    }
+  }
+  .footer-desctop{
+		&_menu{
+      justify-content: space-between;
+      margin-left: 7rem;
+			&_logo{
+        font-size: 30px;
+			}
+      &_wrp{
+        &_block{
+          &_1{
+            a{
+              margin-bottom: 35px;
+              font-size: 24px;
+            }
+          }
+          &_2{
+            a{
+              font-size: 24px;
+              margin-bottom: 7px;
+              svg{
+                width: 35px;
+              }
+            }
+          }
+        }
+      }
+      &_list{
+        &_item{
+          a{
+            svg{
+              width: 50%;
+            }
+          }
+        }
+        
+      }
+		}
+	}
 }
 @media screen and (orientation: landscape) {
   .header{
 		&-main{
 			&-image{
-        max-width: 60%;
+        max-width: 50%;
         height: 100%;
         padding-top: 20px;
         box-sizing: border-box;
