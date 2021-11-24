@@ -468,7 +468,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			img{
 				max-width: 80%;
 				padding-top: 25px;
-        min-height: 500px;
+        height: 450px;
 			}
 		}
 		&_info{
@@ -813,14 +813,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		align-items: center;
 		flex-wrap: wrap;
 		&_block{
-			max-width: 500px;
+			max-width: 600px;
 			&_headertext{
 				margin-top: 0;
-        text-align: justify;
+        text-align: left;
 				margin-bottom: 20px;
 			}
       &_text{
-        text-align: justify;
+        text-align: left;
       }
 			&_button{
 				display: block;
@@ -1123,7 +1123,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				}
 				&-desc{
 					color: $color-main;
-					line-height: 20px;
 				}
 			}
 		}
@@ -1237,7 +1236,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				img{
 					width: 100% !important;
           max-width: 100%;
-          min-height: 300px;
+          height: 300px;
 				}
 			}
 		}
@@ -1583,7 +1582,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				img{
 					width: 100% !important;
           max-width: 100%;
-          min-height: 300px;
+          height: 300px;
 				}
 			}
 		}
@@ -2245,7 +2244,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 					margin: 0 auto;
 				}
         img{
-          min-height: 300px;
+          height: 300px;
         }
 			}
 		}
@@ -2786,6 +2785,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .phone-svg{
     width: 20px;
   }
+  .telegram, .mail{
+    &-svg{
+    width: 60px;
+    height: 35px;
+    }
+  }
   .container-hd{
     display: block;
 		max-width: 1440px !important;
@@ -2818,7 +2823,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
       &-image{
         max-width: 100% !important;
-        width: 60%;
+        width: 50%;
         img{
           height: 90%;
         }
@@ -2894,6 +2899,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
           &_1{
             a{
               margin-bottom: 36px;
+              font-size: 24px;
+            }
+          }
+          &_2{
+            a{
+              font-size: 24px;
+              svg{
+                width: 35px;
+              }
             }
           }
         }
@@ -2917,7 +2931,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			&_image{
 				max-width: 30%;
         img{
-          min-height: 400px;
+          min-height: 350px;
           padding-top: 20px;
         }
 			}
@@ -2929,6 +2943,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	}
 }
 @media (min-width: 1922px) and (max-width: 3840px){
+  .wrap-hd{
+    .submit{
+      height: 800px;
+    }
+  }
   .slick-slider{
     display: none;
   }
@@ -3259,6 +3278,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         &-text{
           font-size: 60px;
           line-height: 60px;
+        }
+      }
+    }
+    &-menu{
+      .wrapper{
+        .button{
+          font-size: 24px;
+          padding: 50px 20px;
+          line-height: 0;
         }
       }
     }
