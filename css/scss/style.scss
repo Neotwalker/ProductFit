@@ -2828,6 +2828,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
     height: 35px;
     }
   }
+  .fa-lg{
+    font-size: 2em;
+  }
   .container-hd{
     display: block;
 		max-width: 1440px !important;
@@ -2868,6 +2871,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         img{
           width: 70% !important;
         }
+      }
+      button.owl-dot{
+        width: 1.5em;
+        height: 1.5em;
       }
       button.owl-prev{
         left: 30%;
