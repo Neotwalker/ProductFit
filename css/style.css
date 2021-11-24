@@ -3046,16 +3046,23 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-companies {
     height: 20vh;
   }
+  .header-case {
+    height: 85vh;
+  }
   .header-case .owl-item img {
-    width: 40% !important;
+    width: 55% !important;
   }
   .header-case button.owl-dot {
+    width: 30px;
+    height: 30px;
     margin-right: 10%;
   }
   .header-case button.owl-prev {
+    font-size: 28px;
     left: 25%;
   }
   .header-case button.owl-next {
+    font-size: 28px;
     right: 25%;
   }
   .advantages-block {

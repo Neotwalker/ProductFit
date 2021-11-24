@@ -3130,16 +3130,21 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       height: 20vh;
     }
     &-case{
+      height: 85vh;
 			.owl-item img{
-				width: 40% !important;
+				width: 55% !important;
 			}
       button.owl-dot{
+        width: 30px;
+        height: 30px;
         margin-right: 10%;
       }
       button.owl-prev{
+        font-size: 28px;
         left: 25%;
       }
       button.owl-next{
+        font-size: 28px;
         right: 25%;
       }
 		}
