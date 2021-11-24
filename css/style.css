@@ -2828,8 +2828,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .header-main-image img {
     height: 90%;
   }
+  .header-case {
+    height: 80vh;
+  }
   .header-case .owl-item img {
-    width: 60% !important;
+    width: 70% !important;
   }
   .header-case button.owl-dot {
     width: 1.5em;
