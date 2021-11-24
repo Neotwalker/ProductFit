@@ -2963,14 +2963,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	.advantage{
 		&-block{
 			&_image{
-				max-width: 30%;
+        min-width: 50%;
         img{
           min-height: 350px;
           padding-top: 20px;
         }
 			}
 			&_info{
-				max-width: 30%;
+				max-width: 45%;
         padding-top: 20px;
 			}
 		}

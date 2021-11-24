@@ -2900,14 +2900,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 40%;
   }
   .advantage-block_image {
-    max-width: 30%;
+    min-width: 50%;
   }
   .advantage-block_image img {
     min-height: 350px;
     padding-top: 20px;
   }
   .advantage-block_info {
-    max-width: 30%;
+    max-width: 45%;
     padding-top: 20px;
   }
   .cart-wrp-left img {
