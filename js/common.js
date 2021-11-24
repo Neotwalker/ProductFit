@@ -74,7 +74,7 @@ $(document).ready(function () {
 				1200: {
 					items: 4
 				},
-        1440: {
+        1300: {
           items: 5,
           nav: false,
           navText: ['', ''],
