@@ -471,6 +471,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&_info{
 			padding-top: 50px;
 			max-width: 400px;
+      height: 475.800px;
 			&_header{
 				margin: 0;
 				margin-bottom: 30px;
@@ -2784,7 +2785,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         }
 			}
 			&_info{
-				max-width: 30%;
+				max-width: 35%;
 			}
 		}
 	}
@@ -2964,13 +2965,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			&_image{
         min-width: 50%;
         img{
-          min-height: 350px;
-          padding-top: 20px;
+          height: 350px;
+          padding-top: 30px;
         }
 			}
 			&_info{
 				max-width: 45%;
-        padding-top: 50px;
+        padding-top: 30px;
 			}
 		}
 	}

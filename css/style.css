@@ -556,6 +556,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 .advantage-block_info {
   padding-top: 50px;
   max-width: 400px;
+  height: 475.800px;
 }
 
 .advantage-block_info_header {
@@ -2754,7 +2755,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     padding-top: 50px;
   }
   .advantage-block_info {
-    max-width: 30%;
+    max-width: 35%;
   }
   .cart-wrp-left .button {
     max-width: 90%;
@@ -2902,12 +2903,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     min-width: 50%;
   }
   .advantage-block_image img {
-    min-height: 350px;
-    padding-top: 20px;
+    height: 350px;
+    padding-top: 30px;
   }
   .advantage-block_info {
     max-width: 45%;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .cart-wrp-left img {
     max-width: 70%;
