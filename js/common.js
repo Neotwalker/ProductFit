@@ -53,7 +53,7 @@ $(document).ready(function () {
 		navText: ['<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>',
 			'<i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>'],
 	});
-	if ($(window).innerWidth() <= 1440) {
+	if ($(window).innerWidth() <= 1441) {
 		$('.advantages-slider').owlCarousel({
 			nav: true,
 			dots: false,
@@ -73,7 +73,12 @@ $(document).ready(function () {
 				},
 				1200: {
 					items: 4
-				}
+				},
+        1440: {
+          items: 5,
+          nav: false,
+          navText: ['', ''],
+        }
 			},
 			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
 				'<i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>'],
