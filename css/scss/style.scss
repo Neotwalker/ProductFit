@@ -1121,6 +1121,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 					color: $color-main;
 				}
 				&-desc{
+          text-align: left;
+          padding: 0 20px;
 					color: $color-main;
 				}
 			}
@@ -2946,6 +2948,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
     }
   }
+  .footer-desctop{
+    &_copyright{
+      display: block;
+      text-align: left;
+      margin-left: 8rem;
+      &_4k{
+        display: none;
+      }
+    }
+  }
 }
 @media (min-width: 1441px) and (max-width: 1921px){
   .slick-slider{
@@ -3294,7 +3306,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       .wrapper{
         .button{
           font-size: 28px;
-          padding: 50px 20px;
+          padding: 50px 50px;
           line-height: 0;
         }
       }
@@ -3337,12 +3349,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         margin-right: 10%;
       }
       button.owl-prev{
-        font-size: 28px;
-        left: 25%;
+        font-size: 50px;
+        left: 20%;
+        top: 40%;
       }
       button.owl-next{
-        font-size: 28px;
-        right: 25%;
+        font-size: 50px;
+        right: 20%;
+        top: 40%;
       }
 		}
 	}
@@ -3534,6 +3548,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .products{
     &_list{
       &_item{
+        width: 30%;
         &_gallery{
           height: 400px;
           &_img{
@@ -3663,6 +3678,27 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         }
       }
     }
+    &-case{
+      height: 85vh;
+			.owl-item img{
+				width: 55% !important;
+			}
+      button.owl-dot{
+        width: 30px;
+        height: 30px;
+        margin-right: 10%;
+      }
+      button.owl-prev{
+        font-size: 50px;
+        left: 20%;
+        top: 45%;
+      }
+      button.owl-next{
+        font-size: 50px;
+        right: 20%;
+        top: 45%;
+      }
+		}
   }
   .advantages{
 		&-block{
@@ -3716,11 +3752,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-case{
       position: relative;
       min-height: 450px;
+      &_image{
+        img{
+          max-width: 1030px;
+        }
+      }
 			&_block{
         margin-left: 4rem;
-        max-width: 600px;
+        max-width: 800px;
 				&_button{
-					max-width: 100%;
+					max-width: 80%;
           .button{
             padding: 40px 15px;
             max-width: 90%;
@@ -3833,12 +3874,13 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .products{
     &_list{
       &_item{
+        width: 30%;
         &_gallery{
-          height: 400px;
+          height: 500px;
           &_img{
             img{
-              width: 80%;
-              height: 300px;
+              width: 100%;
+              height: 400px;
               object-fit: contain;
               margin: 20px auto;
             }

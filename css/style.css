@@ -1311,6 +1311,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 }
 
 .products_list_item_caption-desc {
+  text-align: left;
+  padding: 0 20px;
   color: #F8FFFF;
 }
 
@@ -3028,6 +3030,17 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
 }
 
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .footer-desctop_copyright {
+    display: block;
+    text-align: left;
+    margin-left: 8rem;
+  }
+  .footer-desctop_copyright_4k {
+    display: none;
+  }
+}
+
 @media (min-width: 1441px) and (max-width: 1921px) {
   .slick-slider {
     display: none;
@@ -3353,7 +3366,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .header-menu .wrapper .button, .header-hidden .wrapper .button {
     font-size: 28px;
-    padding: 50px 20px;
+    padding: 50px 50px;
     line-height: 0;
   }
   .header-menu-list-item, .header-hidden-list-item {
@@ -3391,12 +3404,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     margin-right: 10%;
   }
   .header-case button.owl-prev {
-    font-size: 28px;
-    left: 25%;
+    font-size: 50px;
+    left: 20%;
+    top: 40%;
   }
   .header-case button.owl-next {
-    font-size: 28px;
-    right: 25%;
+    font-size: 50px;
+    right: 20%;
+    top: 40%;
   }
   .advantages-block {
     width: 15%;
@@ -3579,6 +3594,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .submit-wrp_block_button {
     width: 50%;
   }
+  .products_list_item {
+    width: 30%;
+  }
   .products_list_item_gallery {
     height: 400px;
   }
@@ -3693,6 +3711,27 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     padding: 50px 20px;
     line-height: 0;
   }
+  .header-case {
+    height: 85vh;
+  }
+  .header-case .owl-item img {
+    width: 55% !important;
+  }
+  .header-case button.owl-dot {
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+  }
+  .header-case button.owl-prev {
+    font-size: 50px;
+    left: 20%;
+    top: 45%;
+  }
+  .header-case button.owl-next {
+    font-size: 50px;
+    right: 20%;
+    top: 45%;
+  }
   .advantages-block {
     width: 15%;
     margin-right: 20px;
@@ -3749,12 +3788,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     position: relative;
     min-height: 450px;
   }
+  .projects-case_image img {
+    max-width: 1030px;
+  }
   .projects-case_block {
     margin-left: 4rem;
-    max-width: 600px;
+    max-width: 800px;
   }
   .projects-case_block_button {
-    max-width: 100%;
+    max-width: 80%;
   }
   .projects-case_block_button .button {
     padding: 40px 15px;
@@ -3859,12 +3901,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   .cart-wrp-info {
     max-width: 50%;
   }
+  .products_list_item {
+    width: 30%;
+  }
   .products_list_item_gallery {
-    height: 400px;
+    height: 500px;
   }
   .products_list_item_gallery_img img {
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     object-fit: contain;
     margin: 20px auto;
   }
