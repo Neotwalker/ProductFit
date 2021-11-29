@@ -3905,11 +3905,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     width: 30%;
   }
   .products_list_item_gallery {
-    height: 500px;
+    height: 700px;
   }
   .products_list_item_gallery_img img {
     width: 100%;
-    height: 400px;
+    height: 600px;
     object-fit: contain;
     margin: 20px auto;
   }
