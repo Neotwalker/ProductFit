@@ -3477,10 +3477,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .projects-case_block {
     margin-left: 7rem;
-    max-width: 600px;
+    max-width: 800px;
   }
   .projects-case_block_button {
-    max-width: 100%;
+    max-width: 75%;
   }
   .projects-case_block_button .button {
     padding: 40px 15px;
