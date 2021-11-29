@@ -2279,7 +2279,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
     display: none;
   }
   .header-main {
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
     background-image: url("../img/header_picture.png");
@@ -2439,6 +2439,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
   }
   .submit-image {
     width: 100%;
+    max-width: 60%;
     padding-bottom: 55px;
     padding-left: 50px;
     box-sizing: border-box;
