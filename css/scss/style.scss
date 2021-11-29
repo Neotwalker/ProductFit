@@ -471,7 +471,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&_info{
 			padding-top: 50px;
 			max-width: 400px;
-      height: 475.800px;
+      height: 500px;
 			&_header{
 				margin: 0;
 				margin-bottom: 30px;
@@ -1236,7 +1236,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				img{
 					width: 100% !important;
           max-width: 100%;
-          height: 300px;
+          padding-top: 0;
+          height: 200px;
 				}
 			}
 		}
@@ -1245,14 +1246,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 	}
 	.projects{
-		margin-bottom: 0;
+		margin-bottom: 10px;
 		&-list{
 			display: block;
 			position: relative;
 			&-item{
 				margin: 0 auto;
 				&:last-child{
-					margin: auto;
+					margin: 20px;
 				}
 			}
 		}
@@ -1329,6 +1330,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	}
 	.submit{
 		&-wrp{
+      margin-top: 50px;
 			&_block{
 				&_headertext, &_text{
 					display: none;
@@ -1337,7 +1339,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 		&-image{
 			max-width: 100%;
-			padding-bottom: 55px;
 			padding-left: 50px;
 			box-sizing: border-box;
 			margin-right: 0;
@@ -1362,6 +1363,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
             &:last-child{
               border-right: none;
               padding-right: 0;
+            }
+            &_text{
+              margin-bottom: 0;
+            }
+            &_info{
+              font-size: 16px;
             }
           }
         }
@@ -1409,7 +1416,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 					justify-content: space-around;
 					a{
 						color: $color-headers;
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 				&_contactus{
@@ -1500,18 +1507,15 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			flex-wrap: wrap;
 			background-image: url('../img/header_picture.png');
 			background-repeat: no-repeat;
-			background-position: 160% 120%;
-			background-size: 105%;
+			background-position: 0 120%;
+			background-size: 90%;
       margin: 0;
 			&-info{
-				margin-top: 0;
+				margin: 0 auto;
+        max-width: 80%;
 				&-headtext{
 					text-align: center;
           padding-top: 40px;
-				}
-				&-text{
-					margin-left: 23px;
-					margin-right: 23px;
 				}
 				&-button{
 					justify-content: center;
@@ -1593,7 +1597,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 	}
 	.projects{
-		margin-bottom: 90px;
+		margin-bottom: 10px;
 		&-list{
 			display: block;
 			position: relative;
@@ -1669,6 +1673,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	}
 	.submit{
 		&-wrp{
+      margin-top: 50px;
 			&_block{
 				&_headertext, &_text{
 					display: none;
@@ -1904,17 +1909,27 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				.button_desc{
 					display: none;
 				}
+        &_header{
+          margin-bottom: 10px;
+        }
+        &_text{
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
 			}
 			&_image{
-				padding: 0 20px 20px;
+        width: 100%;
+        max-width: 60%;
 				.button_mob{
 					display: block;
 					max-width: 300px;
 					margin: 30px auto 0;
 				}
 				img{
+          padding-top: 0;
 					width: 100% !important;
           max-width: 100%;
+          height: 250px;
 				}
 			}
 		}
@@ -2231,14 +2246,16 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 			&_info{
         height: auto;
+        padding-top: 20px;
 				&_header{
 					text-align: center;
+          margin-bottom: 10px;
 				}
 				.button_desc{
 					display: none;
 				}
 				&_text{
-					padding: 0 20px;
+					padding: 0 10px;
 				}
 			}
 			&_image{
@@ -2248,6 +2265,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 					margin: 0 auto;
 				}
         img{
+          padding-top: 0;
           height: 300px;
         }
 			}
@@ -2278,6 +2296,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 	}
 	.projects{
+    margin-bottom: 0;
 		&-case{
 			background: $color-main;
 			&_image{
@@ -2344,6 +2363,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			margin-right: 0;
 		}
 		&-wrp{
+      margin-top: 50px;
 			&_block{
 				text-align: center;
 			}
@@ -2622,6 +2642,18 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		max-width: 100%;
     width: 100%;
 	}
+  .button{
+    @include adaptiv-font(16, 16);
+	}
+  h1, h2, h3, h4, h5, h6{
+    @include adaptiv-font(40, 40);
+  }
+  p, a{
+    @include adaptiv-font(20, 20);
+  }
+  .button{
+    @include adaptiv-font(16, 16);
+	}
 	.header{
     &-menu{
       &-logo{
@@ -2629,19 +2661,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
       &-list{
         &-item{
+          padding-right: 2rem;
           &:last-child{
             padding-right: 2rem;
           }
         }
       }
+      .wrapper{
+        .button{
+          line-height: normal;
+          padding: 25px 20px;
+        }
+      }
     }
-		// &-main{
-		// 	&-image{
-		// 		img{
-		// 			max-width: 350px;
-		// 		}
-		// 	}
-		// }
     &-main{
       margin-right: 2.5rem;
       margin-left: 2.5rem;
@@ -2658,12 +2690,47 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  .advantages{
+    &-block{
+      width: 70%;
+      &-text{
+        font-size: 20px;
+      }
+    }
+    .owl-item img{
+      width: 50% !important;
+    }
+  }
+  .advantage{
+		&-block{
+			&_image{
+				max-width: 60%;
+        img{
+          height: 350px;
+          padding-top: 50px;
+        }
+			}
+			&_info{
+				max-width: 40%;
+        &_header{
+          @include adaptiv-font(32, 32)
+        }
+        &_text{
+          @include adaptiv-font(20, 20);
+        }
+			}
+		}
+	}
 	.cart{
 		&-wrp{
 			&-info{
 				margin-left: 20px;
 				margin-right: 20px;
+        max-width: 50%;
 			}
+      &-left{
+        max-width: 50%;
+      }
 		}
 	}
 	.footer-desctop{
@@ -2725,8 +2792,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		max-width: 100%;
     width: 100%;
 	}
+  h1, h2, h3, h4, h5, h6{
+    @include adaptiv-font(40, 40);
+  }
+  p, a{
+    @include adaptiv-font(20, 20);
+  }
   .button{
-    font-size: 14px;
+    @include adaptiv-font(16, 16);
 	}
 	.header{
     &-menu{
@@ -2737,11 +2810,23 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		&-main{
       margin-left: 5rem;
       margin-right: 5rem;
-			&-image{
-				img{
-					width: 100%;
-				}
-			}
+			&-info{
+        max-width: 40%;
+        &-headtext{
+          font-size: 45px;
+        }
+        &-text{
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+      &-image{
+        max-width: 100% !important;
+        width: 50%;
+        img{
+          height: 90%;
+        }
+      }
 		}
     &-case{
 			.owl-item img{
@@ -2770,10 +2855,19 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 		&-list{
 			display: block;
+      .owl-item img{
+        width: 100% !important;
+        min-height: 220px;
+        object-fit: contain;
+      }
 			&-item{
+        height: 480px;
 				&:last-child{
 					margin: auto;
 				}
+        &_text{
+          padding: 0 25px;
+        }
 			}
 		}
 		&-mob{
@@ -2785,17 +2879,31 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  .advantages{
+    &-block{
+      width: 70%;
+      &-text{
+        font-size: 20px;
+      }
+    }
+    .owl-item img{
+      width: 50% !important;
+    }
+  }
   .advantage{
 		&-block{
 			&_image{
-				max-width: 40%;
+				max-width: 60%;
         img{
           height: 350px;
           padding-top: 50px;
         }
 			}
 			&_info{
-				max-width: 35%;
+				max-width: 40%;
+        &_text{
+          @include adaptiv-font(20, 20);
+        }
 			}
 		}
 	}
@@ -2811,6 +2919,32 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  .submit{
+		&-wrp{
+			&_block{
+				max-width: 50%;
+        &_headertext{
+          font-size: 39px;
+        }
+			}
+		}
+	}
+  .banner{
+    .circle{
+      &-top{
+        left: 30px;
+      }
+    }
+    &-wrp{
+      &-header{
+        &-date{
+          @include adaptiv-font(26, 26);
+          position: relative;
+          z-index: 3;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1441px) and (max-width: 1921px){
   .slick-slider{
@@ -2822,6 +2956,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .phone-svg{
     width: 20px;
   }
+  .button{
+    @include adaptiv-font(22, 22)
+  }
   .telegram, .mail{
     &-svg{
     width: 60px;
@@ -2831,11 +2968,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   .fa-lg{
     font-size: 2em;
   }
-  .container-hd{
-    display: block;
-		max-width: 1440px !important;
-    margin: 0 auto !important;
-	}
   .container{
     margin: 0 auto;
     max-width: 1440px;
@@ -2845,6 +2977,11 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       &-logo{
         font-size: 24px;
         margin-left: 5rem;
+      }
+      .wrapper{
+        .button{
+          @include adaptiv-font(22, 22);  
+        }
       }
     }
     &-main{
@@ -2860,7 +2997,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
       }
       &-image{
         max-width: 100% !important;
-        width: 60%;
+        width: 50%;
         img{
           height: 90%;
         }
@@ -2979,7 +3116,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         font-size: 18px;
       }
 			&-img{
-				width: 40%;
+				width: 50%;
 			}
 		}
 	}
@@ -2989,7 +3126,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         min-width: 50%;
         img{
           height: 350px;
-          padding-top: 30px;
+          padding-top: 40px;
         }
 			}
 			&_info{
@@ -3036,6 +3173,71 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 		}
 	}
+  .services{
+		&-list{
+			&-item{
+				width: 23%;
+				&_img{
+					&_circle{
+						width: 230px;
+						height: 230px;
+					}
+					&_svg{
+						width: 100%;
+						left: 0;
+						height: 142px;
+					}
+				}
+				&_headertext{
+					padding-top: 200px;
+					min-height: 80px;
+					@include adaptiv-font(20, 16);
+          line-height: 29px;
+				}
+			}
+			&-decoration{
+				height: 180px;
+				top: 285px;
+			}
+			&-decoration.bottom{
+				top: 780px;
+			}
+		}
+	}
+  .banner{
+		align-items: center;
+		.container-fluid{
+			width: 100%;
+			justify-content: center;
+		}
+		&-wrp{
+		  min-height: 600px;
+      &-header{
+        &-date{
+          font-size: 36px;
+        }
+        &-text{
+          padding-right: 30px;
+        }
+      }
+			&-img{
+				min-width: 700px;
+			}
+		}
+	}
+  .submit{
+		&-wrp{
+			&_block{
+				max-width: 50%;
+        &_headertext{
+          font-size: 45px;
+        }
+        &_button{
+          width: 50%;
+        }
+			}
+		}
+	}
 }
 @media (min-width: 1922px) and (max-width: 2560px){
   .wrap-hd{
@@ -3051,12 +3253,6 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   }
   p, a{
     font-size: 28px;
-  }
-  .button{
-    max-width: 70%;
-    font-size: 36px;
-    line-height: 36px;
-    padding: 50px 24px;
   }
   .telegram{
     font-size: 40px;
@@ -3089,14 +3285,14 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 	.button{
 		letter-spacing: 1px;
     font-weight: normal;
-    font-size: 22px;
-    padding: 30px 25px;
+    font-size: 30px;
+    padding: 45px 25px;
 	}
 	.header{
     &-menu, &-hidden{
       .wrapper{
         .button{
-          font-size: 24px;
+          font-size: 28px;
           padding: 50px 20px;
           line-height: 0;
         }
@@ -3154,7 +3350,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			width: 15%;
 			margin-right: 20px;
 			&-img{
-				width: 40%;
+				width: 50%;
 			}
       &-text{
         font-size: 24px;
@@ -3168,6 +3364,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			}
 			&_info{
 				max-width: 40%;
+        &_text{
+          margin-bottom: 60px;
+        }
 			}
 		}
 	}
@@ -3178,7 +3377,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				margin-right: 40px;
         min-height: 450px;
         &_header{
-          @include adaptiv-font(20, 18);
+          margin: 15px 0;
+          @include adaptiv-font(32, 32);
+        }
+        &_text{
+          margin: 15px 0;
+          padding: 0 30px;
         }
         &_img{
           width: 70%;
@@ -3192,7 +3396,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 		&-button{
 			max-width: 300px;
-      font-size: 24px;
+      font-size: 28px;
 		}
 		&-case{
       position: relative;
@@ -3228,11 +3432,18 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 		}
 		&-wrp{
 		  min-height: 600px;
-      &-header-text{
-        padding-right: 30px;
+      &-header{
+        width: 40%;
+        &-date{
+          font-size: 36px;
+        }
+        &-text{
+          padding-right: 30px;
+          max-width: 100%;
+        }
       }
 			&-img{
-				min-width: 700px;
+				min-width: 35%;
 			}
 		}
 	}
@@ -3254,7 +3465,8 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 				&_headertext{
 					padding-top: 200px;
 					min-height: 80px;
-					@include adaptiv-font(24, 16);
+					@include adaptiv-font(32, 32);
+          line-height: 32px;
 				}
 			}
 			&-decoration{
@@ -3310,7 +3522,10 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
 			&_block{
 				max-width: 50%;
         &_headertext{
-          font-size: 50px;
+          font-size: 60px;
+        }
+        &_button{
+          width: 50%;
         }
 			}
 		}
@@ -3339,6 +3554,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
         }
       }
     }
+    li{
+      @include adaptiv-font(30, 30);
+    }
     &-info{
       max-width: 70%;
       &-text{
@@ -3348,20 +3566,9 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
   }
   .footer-desctop{
     padding-bottom: 30px;
-    &_copyright{
-      display: none;
-      &_4k{
-        display: block;
-        font-family: 'gilroy-normal', sans-serif;
-        color: #3C3C3C;
-        opacity: 0.7;
-      }
-    }
-  }
-  .footer-desctop{
 		&_menu{
       justify-content: space-between;
-      margin-left: 4rem;
+      margin-left: 7rem;
 			&_logo{
         font-size: 24px;
 			}
@@ -3370,12 +3577,12 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
           &_1{
             a{
               margin-bottom: 53px;
-              font-size: 24px;
+              font-size: 28px;
             }
           }
           &_2{
             a{
-              font-size: 24px;
+              font-size: 28px;
               svg{
                 width: 35px;
               }
@@ -3391,9 +3598,17 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover{
             }
           }
         }
-        
       }
 		}
+    &_copyright{
+      display: none;
+      &_4k{
+        display: block;
+        font-family: 'gilroy-normal', sans-serif;
+        color: #3C3C3C;
+        opacity: 0.7;
+      }
+    }
 	}
 }
 @media (min-width: 2561px) {

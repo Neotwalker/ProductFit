@@ -72,7 +72,7 @@ $(document).ready(function () {
 					items: 3
 				},
 				1200: {
-					items: 4
+					items: 3
 				},
         1300: {
           items: 5,
@@ -101,6 +101,9 @@ $(document).ready(function () {
 				1024: {
 					items: 3
 				},
+        1300: {
+					items: 4
+				},
 				1440: {
 					items: 4
 				}
@@ -128,6 +131,9 @@ $(document).ready(function () {
 				},
 				1200: {
 					items: 3
+				},
+        1366: {
+					items: 4
 				}
 			},
 			navText: ['<i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>',
