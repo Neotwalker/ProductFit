@@ -3414,7 +3414,7 @@ button.owl-next:hover, button.owl-prev:hover, .slick-arrow:hover {
 
 @media (min-width: 1441px) and (max-width: 1921px) {
   .projects-list-item_img {
-    width: 70%;
+    width: 50%;
     object-fit: contain;
   }
   .projects-list-item_img img {
